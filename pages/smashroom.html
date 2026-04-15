@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != "dataLayer" ? "&l=" + l : "";
+            j.async = true;
+            j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, "script", "dataLayer", "GTM-KRX3VB6");
+    </script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Reserva tu sesión en Juego Enigma Barcelona de forma rápida y segura. Consulta disponibilidad, precios y condiciones de la experiencia." />
+    <meta name="keywords"
+        content="reservas escape room, reservar escape room Barcelona, disponibilidad escape room, juego enigma reservas" />
+
+    <title>Juego Enigma Barcelona | Escape Room</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" href="/assets/ico/favicon.ico" type="image/x-icon" />
+
+    <!-- AION WIDGET CSS -->
+    <link href="https://calendar.gestorempresas.es/cleaner.css" rel="stylesheet" />
+    <link href="https://calendar.gestorempresas.es/css/chunk-vendors.css" rel="stylesheet" />
+    <link href="https://calendar.gestorempresas.es/css/app.css" rel="stylesheet" />
+
+    <!-- AION dependencies -->
+    <script src="https://unpkg.com/@adamdehaven/vue-custom-tooltip"></script>
+    <script src="https://js.stripe.com/v3/"></script>
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KRX3VB6" height="0" width="0"
+            style="display: none; visibility: hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager -->
+
+    <!-- HEADER COMPLETO -->
+    <header>
+        <div>
+            <ul>
+                <li>
+                    <a href="/pages/smashroom.html"><img src="/assets/svg/spain.svg"
+                            alt="Icono bandera de España" /></a>
+                </li>
+                <li>
+                    <a href="/ingles/smashroom-en.html"><img src="/assets/svg/usa.svg"
+                            alt="Icono bandera de Estados Unidos" /></a>
+                </li>
+                <li>
+                    <a href="/Catalan/smashroom-ca.html"><img src="/assets/svg/catalan.png"
+                            alt="Icono bandera de Cataluña" /></a>
+                </li>
+            </ul>
+        </div>
+        <nav>
+            <a href="/"><img src="/assets/img/logo-enigma.png" alt="Logo Enigma" /></a>
+            <div class="madrid btn-madrid-map">
+                <p>/BCN</p>
+                <span>+</span>
+            </div>
+            <ul>
+                <li>
+                    <a href="/">Escape Room</a>
+                </li>
+                <li>
+                    <a href="/pages/paraRegalar.html">Regálanos</a>
+                </li>
+                <li><a href="/pages/empresas.html">Empresas</a></li>
+                <li><a href="/colaboremos.html">Colaboremos</a></li>
+                <li><a href="/pages/smashroom.html" class="orange">SmashRoom</a></li>
+                <li>
+                    <a href="/pages/reservas.html" class="reservas">Reservar</a>
+                </li>
+            </ul>
+            <div class="menu-toggle">
+                <div class="burger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+
+                <div class="mobile-menu">
+                    <span><a href="/index.html">Escape Room</a></span>
+                    <span><a href="/pages/paraRegalar.html">Regálanos</a></span>
+                    <span><a href="/pages/empresas.html">Empresas</a></span>
+                    <span><a href="../colaboremos.html">Colaboremos</a></span>
+                    <span><a href="/pages/smashroom.html" class="orange">SmashRoom</a></span>
+                    <span><a href="#" class="contactanos-btn">Contáctanos</a></span>
+
+                    <div class="flags">
+                        <a href="/pages/smashroom.html"><img src="../assets/svg/spain.svg"
+                                alt="Icono bandera de España" /></a>
+                        <a href="/ingles/smashroom-en.html"><img src="/assets/svg/usa.svg"
+                                alt="Icono bandera de Estados Unidos" /></a>
+                        <a href="/Catalan/smashroom-ca.html"><img src="../assets/svg/catalan.png"
+                                alt="Icono bandera de Cataluña" /></a>
+                    </div>
+                    <a href="/pages/reservas.html" class="btn-reservar-mobile">RESERVAR</a>
+                </div>
+            </div>
+        </nav>
+        <div id="panel-madrid" class="panel-madrid-modal">
+            <div class="panel-madrid-box">
+                <a href="../colaboremos.html#colaboremos-separador-1"><img src="../assets/img/cityMap.webp"
+                        alt="Mapa Enigma España" class="mapa-madrid-img" /></a>
+            </div>
+        </div>
+        <!-- POPUP  3-->
+        <div id="popup-colaboremos-2" class="popup-overlay-2">
+            <div class="popup-box-2">
+                <h2>Contáctanos</h2>
+
+                <div class="popup-info-2">
+                    <p>Juego Enigma Barcelona</p>
+                    <p>93 142 66 38</p>
+                    <p>adn@juegoenigma.es</p>
+
+                    <div>
+                        <a href="https://www.tripadvisor.es/Attraction_Review-g187497-d7305650-Reviews-Enigma_Escape_Room_Barcelona-Barcelona_Catalonia.html"
+                            target="_blank">
+                            <img class="trip-icon-2" src="../assets/svg/tripadvisor-white.svg" alt="Logo Tripadvisor" />
+                        </a>
+                        <a href="https://www.instagram.com/juegoenigma" target="_blank">
+                            <img class="ins-icon-2" src="../assets/svg/instagram-white.svg" alt="Logo Instagram" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            const popupOverlay2 = document.getElementById("popup-colaboremos-2");
+            const popupBox2 = document.querySelector(".popup-box-2");
+
+            document.querySelectorAll(".contactanos-btn").forEach((btn) => {
+                btn.addEventListener("click", () => {
+                    popupOverlay2.classList.add("open");
+                });
+            });
+
+            popupOverlay2.addEventListener("click", (e) => {
+                if (!popupBox2.contains(e.target)) {
+                    popupOverlay2.classList.remove("open");
+                }
+            });
+        </script>
+    </header>
+    <a href="./reservas.html" class="btn-reservar-sticky">RESERVAR</a>
+    <script>
+        const btnMadridMap = document.querySelector(".btn-madrid-map");
+        const panelMadrid = document.getElementById("panel-madrid");
+        const stickyBtn2 = document.querySelector(".btn-reservar-sticky");
+
+        btnMadridMap.addEventListener("click", () => {
+            panelMadrid.classList.add("panel-open");
+            stickyBtn2.classList.add("hidden");
+            document.body.classList.add("body-no-scroll");
+        });
+
+        panelMadrid.addEventListener("click", (e) => {
+            if (!e.target.closest(".panel-madrid-box")) {
+                panelMadrid.classList.remove("panel-open");
+                stickyBtn2.classList.remove("hidden");
+                document.body.classList.remove("body-no-scroll");
+            }
+        });
+    </script>
+    <script>
+        const burger = document.querySelector(".burger");
+        const mobileMenu = document.querySelector(".mobile-menu");
+        const stickyBtn = document.querySelector(".btn-reservar-sticky");
+
+        burger.addEventListener("click", () => {
+            burger.classList.toggle("open");
+            mobileMenu.classList.toggle("open");
+            stickyBtn.classList.toggle("hidden");
+        });
+    </script>
+    <main>
+        <!-- SECCION INICIO Y BANNER -->
+        <section class="inicio" id="inicio">
+            <div class="banner-container">
+                <div class="banner-slide active">
+                    <img src="/assets/img/banner1.webp" alt="img-banner1" class="img-banner">
+                </div>
+                <div class="banner-slide">
+                    <img src="/assets/img/banner2.webp" alt="img-banner2" class="img-banner">
+                </div>
+                <div class="banner-slide">
+                    <img src="/assets/img/banner3.webp" alt="img-banner2" class="img-banner">
+                </div>
+                <div class="banner-slide">
+                    <img src="/assets/img/banner4.webp" alt="img-banner2" class="img-banner">
+                </div>
+            </div>
+            <div class="banner-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <script>
+                let currentSlide = 0;
+                const slides = document.querySelectorAll('.banner-slide');
+                const dots = document.querySelectorAll('.dot');
+                const totalSlides = slides.length;
+
+                function showSlide(index) {
+                    //Eliminar clase active
+                    slides.forEach(slide => slide.classList.remove('active'));
+                    dots.forEach(dot => dot.classList.remove('active'));
+
+                    // Añadir clase active a la slide actual
+                    slides[index].classList.add('active');
+                    dots[index].classList.add('active');
+                }
+
+                function nextSlide() {
+                    currentSlide = (currentSlide + 1) % totalSlides;
+                    showSlide(currentSlide);
+                }
+
+                // Cambiar automáticamente cada 8 segundos
+                setInterval(nextSlide, 8000);
+
+                // Opcional: hacer clic en los dots para cambiar de slide
+                dots.forEach((dot, index) => {
+                    dot.addEventListener('click', () => {
+                        currentSlide = index;
+                        showSlide(currentSlide);
+                    });
+                });
+            </script>
+        </section>
+
+        <h1 class="titulo-smashroom">
+            SMASH ROOM
+        </h1>
+        <section class="main-content">
+            <div class="smash-img">
+                <img src="/assets/img/banner2.webp" alt="smashroom">
+            </div>
+            <div class="smash-texto">
+                <p>
+                    Una Smash Room es un espacio seguro creado para liberar estrés y tensión a la vez que te lo pasas en
+                    grande.
+                    Aquí podréis romper objetos como platos, vidrios y otros elementos para desahogaros.
+                </p>
+                <br><br>
+                <p>
+                    Estará todo supervisado en un entorno siempre seguro donde podréis desahogaros tanto solos como
+                    acompañados,
+                    de forma entretenida y liberadora. Golpea, rompe y destroza sin preocupaciones.
+                    En nuestra Smash Room, lo más importante es que os divirtáis y salgáis satisfechos.
+                </p>
+                <br><br>
+                <p>
+                    Anímate a vivir esta increíble experiencia. Transforma el estrés y la ansiedad en alegría y
+                    tranquilidad.
+                    Todo ello creando un recuerdo inolvidable lleno de diversión.
+                </p>
+                <br>
+                <p>
+                    ¡Te esperamos en la Smash Room, donde
+                    liberarte es el secreto para conseguir una mente más liviana y un ánimo revitalizado!
+                </p>
+            </div>
+        </section>
+
+        <section class="smash-romper">
+            <div class="romper-texto">
+                <div class="romper-titulo">
+                    <img src="/assets/img/cable_derecho.webp" alt="Decoración de cable naranja">
+                    <h2>¿Qué puedo romper?</h2>
+                </div>
+                <p>
+                    Hay una gran variedad de objetos para romper: platos, botellas, electrodomésticos
+                    desechados y más. Todos ellos están preparados de manera segura para garantizar una
+                    experiencia controlada.
+                </p>
+            </div>
+            <img src="/assets/img/banner4.webp" alt="Romper objetos smashroom" class="romper-img">
+        </section>
+
+        <section class="smash-proteccion">
+            <img src="/assets/img/guantes.webp" alt="Protección smashroom" class="romper-img">
+            <div class="proteccion-texto">
+                <div class="proteccion-titulo">
+                    <img src="/assets/img/cable_izqiuerdo.webp" alt="Decoración de cable naranja">
+                    <h2>PROTECCIÓN</h2>
+                </div>
+                <p>
+                    La seguridad es una prioridad para nosotros. Nosotros os proporcionaremos el equipo de protección,
+                    que incluye gafas de
+                    seguridad, guantes y, en ocasiones, trajes especiales para garantizar una experiencia segura y
+                    sin lesiones.
+                </p>
+            </div>
+        </section>
+
+        <section class="smash-romper">
+            <div class="romper-texto">
+                <div class="romper-titulo">
+                    <img src="/assets/img/cable_derecho.webp" alt="Decoración de cable naranja">
+                    <h2>PARTICIPANTES</h2>
+                </div>
+                <p>
+                    Es una experiencia para mayores de 18 años.
+                </p>
+            </div>
+            <img src="/assets/img/pareja.webp" alt="Romper objetos smashroom" class="romper-img">
+        </section>
+
+        <section class="smash-proteccion">
+            <img src="/assets/img/relojdearena2.webp" alt="Protección smashroom" class="romper-img">
+            <div class="proteccion-texto">
+                <div class="proteccion-titulo">
+                    <img src="/assets/img/cable_izqiuerdo.webp" alt="Decoración de cable naranja">
+                    <h2>DURACIÓN</h2>
+                </div>
+                <p>
+                    Cada sesión de Smash Room tiene una duración de 30 minutos.
+                </p>
+            </div>
+        </section>
+
+        <section class="smash-romper">
+            <div class="romper-texto">
+                <div class="romper-titulo">
+                    <img src="/assets/img/cable_derecho.webp" alt="Decoración de cable naranja">
+                    <h2>PRECIOS</h2>
+                </div>
+                <p>
+                    Cada sesión es para un <span>máximo de 2 personas</span>.
+                </p>
+                <br><br>
+                <p>
+                    1 Persona: <span>45€</span>
+                </p>
+                <p>
+                    2 Personas: <span>69€</span>
+                </p>
+            </div>
+            <img src="/assets/img/calculadora.webp" alt="Romper objetos smashroom" class="romper-img">
+        </section>
+
+        <!-- Reservas Aion -->
+        <section class="smash-reservas">
+            <h2>
+                RESERVAS
+            </h2>
+            <!-- AION - CALENDARIO -->
+            <script src="https://unpkg.com/@adamdehaven/vue-custom-tooltip"></script>
+            <script src="https://js.stripe.com/v3/"></script>
+            <script>
+                localStorage.setItem('data-integration-aion-uuid', 'e349f18e-ab5a-48e2-b484-2cad6951e273');
+                localStorage.setItem('data-integration-aion-url', 'https://enigmabcn.gestorempresas.es');
+                localStorage.setItem('data-integration-aion-locale', 'es_ES');
+            </script>
+            <link href="https://calendar.gestorempresas.es/cleaner.css" rel="stylesheet">
+            <link href="https://calendar.gestorempresas.es/css/chunk-vendors.css" rel="stylesheet">
+            <link href="https://calendar.gestorempresas.es/css/app.css" rel="stylesheet">
+            <noscript><strong>We're sorry but enigma doesn't work properly without JavaScript enabled. Please enable it
+                    to continue.</strong></noscript>
+            <div id="aion-checkout-widget"></div>
+            <script src="https://calendar.gestorempresas.es/js/chunk-vendors.js"></script>
+            <script src="https://calendar.gestorempresas.es/js/app.js"></script>
+        </section>
+
+        <a href="https://wa.me/34673423738" target="_blank" class="whatsapp">
+            <img src="../assets/svg/whatsapp.svg" alt="WhatsApp" />
+        </a>
+
+    </main>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-naranja">
+            <div class="footer-texto">
+                <a href="paraRegalar.html">REGALA LA<br />EXPERIENCIA</a>
+                <p>673 42 37 38</p>
+                <p>ADN@JUEGOENIGMA.ES</p>
+                <p class="btn-donde-estamos">¿DÓNDE ESTAMOS?</p>
+            </div>
+            <div class="footer-iconos">
+                <a href="https://www.tripadvisor.es/Attraction_Review-g187497-d7305650-Reviews-Enigma_Escape_Room_Barcelona-Barcelona_Catalonia.html"
+                    target="_blank"><img src="../assets/svg/tripadvisor.svg" alt="Tripadvisor" /></a>
+                <a href="https://www.instagram.com/juegoenigma/" target="_blank"><img src="../assets/svg/instagram.svg"
+                        alt="Instagram" /></a>
+            </div>
+        </div>
+        <div class="footer-negro">
+            <a href="#">BLOG</a>
+            <a href="../aviso-legal.html">AVISO LEGAL</a>
+            <a href="../privacidad.html">PRIVACIDAD</a>
+            <a href="../terminos-condiciones.html">TERMINOS Y CONDICIONES</a>
+            <a href="/sitemap.xml">SITEMAP</a>
+        </div>
+    </footer>
+    <footer class="footer-responsive">
+        <p>
+            <a class="tooltip" href="tel:+34673423738">LLAMAR</a>
+        </p>
+        <p class="btn-donde-estamos">¿DÓNDE ESTAMOS?</p>
+    </footer>
+
+    <!-- PANEL DONDE ESTAMOS -->
+    <div id="panel-donde" class="panel-donde">
+        <div class="panel-donde__box">
+            <button class="panel-donde__close">&times;</button>
+            <h2>¿DÓNDE ESTAMOS?</h2>
+            <p class="box-direction">CARRER DE LES ACÀCIES 38, 08027</p>
+            <div>
+                <p>
+                    <img src="../assets/img/metro_line_5-barcelona.webp" alt="Icono línea metro 1 Madrid" />
+                    MARAGALL (5 MIN)
+                </p>
+                <p>
+                    <img src="../assets/img/metro_line_4-barcelona.webp" alt="Icono línea metro 1 Madrid" />
+                    MARAGALL (5 MIN)
+                </p>
+            </div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3579.8445465987475!2d2.175891476466249!3d41.42525129364515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4bd2c1979e327%3A0x93f330f1b96f61fd!2sCarrer%20de%20les%20Ac%C3%A0cies%2C%2038%2C%20Sant%20Andreu%2C%2008027%20Barcelona!5e1!3m2!1ses!2ses!4v1768394767039!5m2!1ses!2ses"
+                width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <script defer="" src="/js/main.js"></script>
+    <script>
+        const panelDonde = document.getElementById("panel-donde");
+        const cerrarDonde = document.querySelector(".panel-donde__close");
+
+        document.querySelectorAll(".btn-donde-estamos").forEach((btn) => {
+            btn.addEventListener("click", () => {
+                panelDonde.classList.add("panel-donde--open");
+            });
+        });
+
+        cerrarDonde.addEventListener("click", () => {
+            panelDonde.classList.remove("panel-donde--open");
+        });
+
+        panelDonde.addEventListener("click", (e) => {
+            if (e.target === panelDonde) {
+                panelDonde.classList.remove("panel-donde--open");
+            }
+        });
+    </script>
+
+</body>
+
+</html>

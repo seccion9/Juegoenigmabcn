@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <!-- Google Tag Manager -->
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != "dataLayer" ? "&l=" + l : "";
+      j.async = true;
+      j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, "script", "dataLayer", "GTM-KRX3VB6");
+  </script>
+  <!-- End Google Tag Manager -->
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, follow" />
+
+  <title>Juego Enigma Barcelona | Escape Room</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="icon" href="./assets/ico/favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KRX3VB6" height="0" width="0"
+      style="display: none; visibility: hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <header>
+    <div>
+      <ul>
+        <li>
+          <a href="/privacidad.html"><img src="/assets/svg/spain.svg" alt="Icono bandera de España" /></a>
+        </li>
+        <li>
+          <a href="/ingles/privacidad-en.html"></a><img src="/assets/svg/usa.svg"
+            alt="Icono bandera de Estados Unidos" /></a>
+        </li>
+        <li>
+            <a href="/Catalan/privacidad-ca.html"
+              ><img
+                src="/assets/svg/catalan.png"
+                alt="Icono bandera de Cataluña"
+            /></a>
+          </li>
+      </ul>
+    </div>
+    <nav>
+      <a href="/"><img src="/assets/img/logo-enigma.png"
+          alt="Logo Enigma" /></a>
+      <div class="madrid btn-madrid-map">
+        <p>/BCN</p>
+        <span>+</span>
+      </div>
+      <ul>
+        <li>
+          <a href="/">Escape Room</a>
+        </li>
+        <li><a href="/pages/paraRegalar.html">Regálanos</a></li>
+        <li><a href="/pages/empresas.html">Empresas</a></li>
+        <li><a href="/colaboremos.html">Colaboremos</a></li>
+        <li><a href="/pages/smashroom.html">Smash Room</a></li>
+        <li>
+          <a href="/pages/reservas.html" class="reservas">Reservar</a>
+        </li>
+      </ul>
+      <button class="menu-toggle">
+        <div class="burger">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+
+        <div class="mobile-menu">
+          <span><a href="/">Escape Room</a></span>
+          <span><a href="/pages/paraRegalar.html">Regálanos</a></span>
+          <span><a href="/pages/empresas.html">Empresas</a></span>
+          <span><a href="/colaboremos.html">Colaboremos</a></span>
+          <span><a href="/pages/smashroom.html">Smash Room</a></span>
+          <span><a href="#" class="contactanos-btn">Contáctanos</a></span>
+
+          <div class="flags">
+            <a href="/privacidad.html"><img src="../assets/svg/spain.svg" alt="Icono bandera de España" /></a>
+            <a href="/ingles/privacidad-en.html"><img src="../assets/svg/usa.svg"
+                alt="Icono bandera de Estados Unidos" /></a>
+            <a href="/Catalan/privacidad-ca.html"
+              ><img
+                src="/assets/svg/catalan.png"
+                alt="Icono bandera de Cataluña"
+            /></a>
+          </div>
+          <a href="/pages/reservas.html" class="btn-reservar-mobile">RESERVAR</a>
+        </div>
+      </button>
+    </nav>
+    <div id="panel-madrid" class="panel-madrid-modal">
+      <div class="panel-madrid-box">
+        <a href="../colaboremos.html#colaboremos-separador-1"><img src="../assets/img/cityMap.webp"
+            alt="Mapa Enigma España" class="mapa-madrid-img" /></a>
+      </div>
+    </div>
+    <!-- POPUP  3-->
+    <div id="popup-colaboremos-2" class="popup-overlay-2">
+      <div class="popup-box-2">
+        <h2>Contáctanos</h2>
+
+        <div class="popup-info-2">
+          <p>Juego Enigma Barcelona</p>
+          <p>93 142 66 38</p>
+          <p>adn@juegoenigma.es</p>
+
+          <div>
+            <a href="https://www.tripadvisor.es/Attraction_Review-g187497-d7305650-Reviews-Enigma_Escape_Room_Barcelona-Barcelona_Catalonia.html"
+              target="_blank">
+              <img class="trip-icon-2" src="../assets/svg/tripadvisor-white.svg" alt="Logo Tripadvisor" />
+            </a>
+            <a href="https://www.instagram.com/juegoenigma" target="_blank">
+              <img class="ins-icon-2" src="../assets/svg/instagram-white.svg" alt="Logo Instagram" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const popupOverlay2 = document.getElementById("popup-colaboremos-2");
+      const popupBox2 = document.querySelector(".popup-box-2");
+
+      document.querySelectorAll(".contactanos-btn").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          popupOverlay2.classList.add("open");
+        });
+      });
+
+      popupOverlay2.addEventListener("click", (e) => {
+        if (!popupBox2.contains(e.target)) {
+          popupOverlay2.classList.remove("open");
+        }
+      });
+    </script>
+  </header>
+  <a href="./pages/reservas.html" class="btn-reservar-sticky">RESERVAR</a>
+  <script>
+    const btnMadridMap = document.querySelector(".btn-madrid-map");
+    const panelMadrid = document.getElementById("panel-madrid");
+    const stickyBtn2 = document.querySelector(".btn-reservar-sticky");
+
+    btnMadridMap.addEventListener("click", () => {
+      panelMadrid.classList.add("panel-open");
+      stickyBtn2.classList.add("hidden");
+      document.body.classList.add("body-no-scroll");
+    });
+
+    panelMadrid.addEventListener("click", (e) => {
+      if (!e.target.closest(".panel-madrid-box")) {
+        panelMadrid.classList.remove("panel-open");
+        stickyBtn2.classList.remove("hidden");
+        document.body.classList.remove("body-no-scroll");
+      }
+    });
+  </script>
+  <script>
+    const burger = document.querySelector(".burger");
+    const mobileMenu = document.querySelector(".mobile-menu");
+    const stickyBtn = document.querySelector(".btn-reservar-sticky");
+
+    burger.addEventListener("click", () => {
+      burger.classList.toggle("open");
+      mobileMenu.classList.toggle("open");
+      stickyBtn.classList.toggle("hidden");
+    });
+  </script>
+  <main>
+    <div class="main-privacidad">
+      <div>
+        <h2>COOKIES</h2>
+        <p>
+          Algunas de las secciones de esta web utilizan cookies (pequeños archivos de información que el servidor envía
+          al ordenador de quien accede a la página). La finalidad de una cookie es mejorar el servicio cuando el usuario
+          vuelva a visitar la web. Al recoger información sobre sus preferencias el sitio web puede actuar de forma
+          individualizada cuando vuelva a conectarse; también ayudan a mejorar el sitio web identificando cuáles son las
+          secciones más visitadas, lo cual permite a Room Escape Formacion mejorar su servicio. Usted puede configurar
+          su navegador para que se le notifique la solicitud de instalación de una cookie o para rechazarlas
+          completamente. Aceptar la cookie en ningún caso da acceso a Room Escape Formacion a su ordenador o a
+          información de carácter personal.
+        </p>
+        <p>
+          Las cookies se guardarán en el disco duro de su ordenador hasta que usted las elimine. Podrá hacer que su
+          navegador le avise de la presencia de cookies o que los rechace automáticamente. Si rechaza las cookies podrá
+          seguir usando el Sitio Web, si bien ello podrá suponer la limitación en el uso de algunas de las prestaciones
+          o impedir el buen funcionamiento del Sitio Web. Al acceder a la web el sistema le notificará la presencia de
+          cookies aceptando su uso si continúa con la navegación del sitio web.
+        </p>
+      </div>
+      <div>
+        <h2>LOPD</h2>
+        <p>
+          En el momento de inscribirse en www.juegoenigma.es el participante acepta que sus datos personales queden
+          incorporados a un archivo automatizado, el cual tiene la finalidad de mantener informado al usuario sobre las
+          novedades de sus servicios. Dicho archivo está inscrito en la Agencia Española de Protección de Datos regida
+          por la Ley Orgánica 15/1999 de Protección de Datos de Carácter Personal (LOPD)
+        </p>
+        <p>
+          En cualquier caso, el usuario responderá de la veracidad de los datos facilitados en el momento de enviar su
+          solicitud de información. De acuerdo con la normativa vigente en materia de protección de datos de carácter
+          personal, el propietario del archivo se compromete a dar cumplimiento a la obligación de secreto profesional
+          respecto a estos datos y al deber de guardarlos, garantizando su confidencialidad, y adoptando, en su caso,
+          las medidas técnicas adecuadas para evitar cualquier alteración, mal uso y acceso no autorizado.
+        </p>
+        <p>
+          Los datos personales que proporcionan los usuarios no serán cedidos a ninguna empresa y únicamente serán
+          utilizados para el envío de información sobre los servicios que ofrece Room Escape Formacion. Los datos
+          personales tampoco estarán disponibles para terceras personas en ningún momento. Los usuarios de esta página
+          web tienen derecho de acceso, rectificación, oposición y cancelación de los datos que consten en el archivo
+          automatizado de datos. Para ello deben solicitarlo a Room Escape Formacion por escrito a Carrer Acacies nº38
+          bj, 08027 de Barcelona o enviando un correo eléctronico a adn@juegoenigma.es, con sus datos personales, fotocopia
+          del DNI del usuario, correo electrónico que facilitó a La Web y firma del usuario.
+        </p>
+      </div>
+    </div>
+  </main>
+  <a href="https://wa.me/34673423738" target="_blank" class="whatsapp"><img src="../assets/svg/whatsapp.svg"
+      alt="WhatsApp" /></a>
+  <footer class="footer">
+    <div class="footer-naranja">
+      <div class="footer-texto">
+        <a href="./pages/paraRegalar.html">REGALA LA<br />EXPERIENCIA</a>
+        <p>673 42 37 38</p>
+        <p>ADN@JUEGOENIGMA.ES</p>
+        <p class="btn-donde-estamos">¿DÓNDE ESTAMOS?</p>
+      </div>
+      <div class="footer-iconos">
+        <a href="https://www.tripadvisor.es/Attraction_Review-g187497-d7305650-Reviews-Enigma_Escape_Room_Barcelona-Barcelona_Catalonia.html"
+          target="_blank"><img src="assets/svg/tripadvisor.svg" alt="Tripadvisor" /></a>
+        <a href="https://www.instagram.com/juegoenigma/" target="_blank"><img src="assets/svg/instagram.svg"
+            alt="Instagram" /></a>
+      </div>
+    </div>
+    <div class="footer-negro">
+      <a href="#">BLOG</a>
+      <a href="aviso-legal.html">AVISO LEGAL</a>
+      <a href="privacidad.html">PRIVACIDAD</a>
+      <a href="terminos-condiciones.html">TERMINOS Y CONDICIONES</a>
+      <a href="/sitemap.xml">SITEMAP</a>
+    </div>
+  </footer>
+  <footer class="footer-responsive">
+    <p>
+      <a class="tooltip" href="tel:+34673423738">LLAMAR</a>
+    </p>
+    <p class="btn-donde-estamos">¿DÓNDE ESTAMOS?</p>
+  </footer>
+  <div id="panel-donde" class="panel-donde">
+    <div class="panel-donde__box">
+      <button class="panel-donde__close">&times;</button>
+      <h2>¿Dónde estamos?</h2>
+      <p class="box-direction">Carrer de les Acàcies 38, 08027</p>
+      <div>
+        <p>
+          <img src="/assets/img/metro_line_5-barcelona.webp" alt="Icono línea metro 1 Madrid" />
+          Maragall (5 min)
+        </p>
+        <p>
+          <img src="/assets/img/metro_line_4-barcelona.webp" alt="Icono línea metro 1 Madrid" />
+          Maragall (5 min)
+        </p>
+      </div>
+      <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3579.8445465987475!2d2.175891476466249!3d41.42525129364515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4bd2c1979e327%3A0x93f330f1b96f61fd!2sCarrer%20de%20les%20Ac%C3%A0cies%2C%2038%2C%20Sant%20Andreu%2C%2008027%20Barcelona!5e1!3m2!1ses!2ses!4v1768394767039!5m2!1ses!2ses"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+    </div>
+  </div>
+  <script>
+    const panelDonde = document.getElementById("panel-donde");
+    const cerrarDonde = document.querySelector(".panel-donde__close");
+
+    document.querySelectorAll(".btn-donde-estamos").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        panelDonde.classList.add("panel-donde--open");
+      });
+    });
+
+    cerrarDonde.addEventListener("click", () => {
+      panelDonde.classList.remove("panel-donde--open");
+    });
+
+    panelDonde.addEventListener("click", (e) => {
+      if (e.target === panelDonde) {
+        panelDonde.classList.remove("panel-donde--open");
+      }
+    });
+  </script>
+</body>
+
+</html>

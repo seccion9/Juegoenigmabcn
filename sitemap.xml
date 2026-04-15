@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- HOME -->
+  <url>
+    <loc>https://juegoenigma.es/</loc>
+
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://juegoenigma.es/" />
+
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://juegoenigma.es/ingles/index-en.html" />
+
+    <xhtml:link rel="alternate" hreflang="ca"
+      href="https://juegoenigma.es/Catalan/index-ca.html" />
+  </url>
+
+  <!-- COLABOREMOS -->
+  <url>
+    <loc>https://juegoenigma.es/colaboremos.html</loc>
+
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://juegoenigma.es/colaboremos.html" />
+
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://juegoenigma.es/ingles/colaboremos-en.html" />
+
+    <xhtml:link rel="alternate" hreflang="ca"
+      href="https://juegoenigma.es/Catalan/colaboremos-ca.html" />
+  </url>
+
+  <!-- RESERVAS -->
+  <url>
+    <loc>https://juegoenigma.es/pages/reservas.html</loc>
+
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://juegoenigma.es/pages/reservas.html" />
+
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://juegoenigma.es/ingles/reservas-en.html" />
+
+    <xhtml:link rel="alternate" hreflang="ca"
+      href="https://juegoenigma.es/Catalan/reservas-ca.html" />
+  </url>
+
+  <!-- MISIÓN VIRUS -->
+  <url>
+    <loc>https://juegoenigma.es/pages/virus.html</loc>
+
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://juegoenigma.es/pages/virus.html" />
+
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://juegoenigma.es/ingles/virus-en.html" />
+
+    <xhtml:link rel="alternate" hreflang="ca"
+      href="https://juegoenigma.es/Catalan/virus-ca.html" />
+  </url>
+
+  <!-- ASESINO DE KEYLOCK CITY -->
+  <url>
+    <loc>https://juegoenigma.es/pages/info-asesino-de-keylock-city.html</loc>
+
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://juegoenigma.es/pages/info-asesino-de-keylock-city.html" />
+
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://juegoenigma.es/ingles/info-asesino-de-keylock-city-en.html" />
+
+    <xhtml:link rel="alternate" hreflang="ca"
+      href="https://juegoenigma.es/Catalan/info-asesino-de-keylock-city-ca.html" />
+  </url>
+
+  <!-- PARA REGALAR -->
+  <url>
+    <loc>https://juegoenigma.es/pages/paraRegalar.html</loc>
+
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://juegoenigma.es/pages/paraRegalar.html" />
+
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://juegoenigma.es/ingles/paraRegalar-en.html" />
+
+    <xhtml:link rel="alternate" hreflang="ca"
+      href="https://juegoenigma.es/Catalan/paraRegalar-ca.html" />
+  </url>
+
+  <!-- EMPRESAS -->
+  <url>
+    <loc>https://juegoenigma.es/pages/empresas.html</loc>
+
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://juegoenigma.es/pages/empresas.html" />
+
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://juegoenigma.es/ingles/empresas-en.html" />
+
+    <xhtml:link rel="alternate" hreflang="ca"
+      href="https://juegoenigma.es/Catalan/empresas-ca.html" />
+  </url>
+
+</urlset>

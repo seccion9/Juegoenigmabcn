@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <!-- Google Tag Manager -->
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != "dataLayer" ? "&l=" + l : "";
+      j.async = true;
+      j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, "script", "dataLayer", "GTM-KRX3VB6");
+  </script>
+  <!-- End Google Tag Manager -->
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, follow" />
+
+  <title>Juego Enigma Barcelona | Escape Room</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="icon" href="./assets/ico/favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KRX3VB6" height="0" width="0"
+      style="display: none; visibility: hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <header>
+    <div>
+      <ul>
+        <li>
+          <a href="/terminos-condiciones.html"><img src="./assets/svg/spain.svg" alt="Icono bandera de España" /></a>
+        </li>
+        <li>
+          <a href="/ingles/terminos-condiciones-en.html"></a><img src="./assets/svg/usa.svg"
+            alt="Icono bandera de Estados Unidos" /></a>
+        </li>
+        <li>
+            <a href="/Catalan/terminos-condiciones-ca.html"
+              ><img
+                src="/assets/svg/catalan.png"
+                alt="Icono bandera de Cataluña"
+            /></a>
+          </li>
+      </ul>
+    </div>
+    <nav>
+      <a href="/"><img src="/assets/img/logo-enigma.png"
+          alt="Logo Enigma" /></a>
+      <div class="madrid btn-madrid-map">
+        <p>/BCN</p>
+        <span>+</span>
+      </div>
+      <ul>
+        <li>
+          <a href="/">Escape Room</a>
+        </li>
+        <li><a href="/pages/paraRegalar.html">Regálanos</a></li>
+        <li><a href="/pages/empresas.html">Empresas</a></li>
+        <li><a href="/colaboremos.html">Colaboremos</a></li>
+        <li><a href="/pages/smashroom.html">Smash Room</a></li>
+        <li>
+          <a href="/pages/reservas.html" class="reservas">Reservar</a>
+        </li>
+      </ul>
+      <button class="menu-toggle">
+        <div class="burger">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+
+        <div class="mobile-menu">
+          <span><a href="/">Escape Room</a></span>
+          <span><a href="/pages/paraRegalar.html">Regálanos</a></span>
+          <span><a href="/pages/empresas.html">Empresas</a></span>
+          <span><a href="/colaboremos.html">Colaboremos</a></span>
+          <span><a href="/pages/smashroom.html">Smash Room</a></span>
+          <span><a href="#" class="contactanos-btn">Contáctanos</a></span>
+
+          <div class="flags">
+            <a href="/terminos-condiciones.html"><img src="../assets/svg/spain.svg" alt="Icono bandera de España" /></a>
+            <a href="/ingles/terminos-condiciones-en.html"><img src="../assets/svg/usa.svg"
+                alt="Icono bandera de Estados Unidos" /></a>
+            <a href="/Catalan/terminos-condiciones-ca.html"
+              ><img
+                src="/assets/svg/catalan.png"
+                alt="Icono bandera de Cataluña"
+            /></a>
+          </div>
+          <a href="/pages/reservas.html" class="btn-reservar-mobile">RESERVAR</a>
+        </div>
+      </button>
+    </nav>
+    <div id="panel-madrid" class="panel-madrid-modal">
+      <div class="panel-madrid-box">
+        <a href="../colaboremos.html#colaboremos-separador-1"><img src="../assets/img/cityMap.webp"
+            alt="Mapa Enigma España" class="mapa-madrid-img" /></a>
+      </div>
+    </div>
+    <!-- POPUP  3-->
+    <div id="popup-colaboremos-2" class="popup-overlay-2">
+      <div class="popup-box-2">
+        <h2>Contáctanos</h2>
+
+        <div class="popup-info-2">
+          <p>Juego Enigma Barcelona</p>
+          <p>93 142 66 38</p>
+          <p>adn@juegoenigma.es</p>
+
+          <div>
+            <a href="https://www.tripadvisor.es/Attraction_Review-g187497-d7305650-Reviews-Enigma_Escape_Room_Barcelona-Barcelona_Catalonia.html"
+              target="_blank">
+              <img class="trip-icon-2" src="../assets/svg/tripadvisor-white.svg" alt="Logo Tripadvisor" />
+            </a>
+            <a href="https://www.instagram.com/juegoenigma" target="_blank">
+              <img class="ins-icon-2" src="../assets/svg/instagram-white.svg" alt="Logo Instagram" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const popupOverlay2 = document.getElementById("popup-colaboremos-2");
+      const popupBox2 = document.querySelector(".popup-box-2");
+
+      document.querySelectorAll(".contactanos-btn").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          popupOverlay2.classList.add("open");
+        });
+      });
+
+      popupOverlay2.addEventListener("click", (e) => {
+        if (!popupBox2.contains(e.target)) {
+          popupOverlay2.classList.remove("open");
+        }
+      });
+    </script>
+  </header>
+  <a href="./pages/reservas.html" class="btn-reservar-sticky">RESERVAR</a>
+  <script>
+    const btnMadridMap = document.querySelector(".btn-madrid-map");
+    const panelMadrid = document.getElementById("panel-madrid");
+    const stickyBtn2 = document.querySelector(".btn-reservar-sticky");
+
+    btnMadridMap.addEventListener("click", () => {
+      panelMadrid.classList.add("panel-open");
+      stickyBtn2.classList.add("hidden");
+      document.body.classList.add("body-no-scroll");
+    });
+
+    panelMadrid.addEventListener("click", (e) => {
+      if (!e.target.closest(".panel-madrid-box")) {
+        panelMadrid.classList.remove("panel-open");
+        stickyBtn2.classList.remove("hidden");
+        document.body.classList.remove("body-no-scroll");
+      }
+    });
+  </script>
+  <script>
+    const burger = document.querySelector(".burger");
+    const mobileMenu = document.querySelector(".mobile-menu");
+    const stickyBtn = document.querySelector(".btn-reservar-sticky");
+
+    burger.addEventListener("click", () => {
+      burger.classList.toggle("open");
+      mobileMenu.classList.toggle("open");
+      stickyBtn.classList.toggle("hidden");
+    });
+  </script>
+  <main>
+    <div class="main-terminos">
+      <h1>TÉRMINOS Y CONDICIONES</h1>
+      <div>
+        <h2>Condiciones de acceso y participación</h2>
+        <ul>
+          <li>La participación en la actividad implica la aceptación íntegra de estos Términos y Condiciones por parte
+            de la totalidad de los participantes, de ahora en adelante: “jugadores”. En caso de que algún jugador no
+            esté, total o parcialmente de acuerdo con el contenido de estos Términos y Condiciones, deberá abstenerse de
+            participar.</li>
+          <li>Durante el desarrollo del juego los jugadores deberán atender y seguir en todo momento las indicaciones
+            del personal de Enigma Barcelona.</li>
+          <li>Enigma Barcelona se reserva el derecho de admisión y el derecho de expulsar a los jugadores de forma
+            inmediata en caso de detectar cualquier incumplimiento de estos Términos y Condiciones o de las indicaciones
+            que reciban por parte del personal de la empresa, perdiendo así el derecho a continuar jugando y a cualquier
+            tipo de devolución o indemnización.</li>
+          <li>El aforo de los juegos es limitado y depende de cada juego. Está debidamente indicado en la página web
+            correspondiente a cada juego.</li>
+          <li>La edad mínima para participar depende de cada juego. Está debidamente indicada en la página web
+            correspondiente a cada juego.</li>
+          <li>Las personas con movilidad reducida (sillas de ruedas, muletas, etc.) deberán consultar vía e-mail o
+            teléfono la viabilidad de participar en cada uno de los juegos de Enigma Barcelona para evitar cualquier
+            tipo de inconveniente.</li>
+          <li>Queda totalmente prohibido:
+            <ul>
+              <li>Participar en las actividades bajo los efectos del alcohol, cualquier tipo de droga u otras sustancias
+                estupefacientes.</li>
+              <li>Filmar o tomar fotografías en el interior de las instalaciones.</li>
+              <li>El uso de cualquier dispositivo electrónico, así como cualquier objeto que proceda del exterior.</li>
+              <li>Falta de aseo personal grave.</li>
+              <li>Falta de respeto al personal del juego o actitudes violentas o que provoquen cualquier desorden
+                durante la actividad.</li>
+              <li>No seguir las indicaciones del personal del juego.</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h2>Horarios y retrasos</h2>
+        <ul>
+          <li>Se requiere máxima puntualidad. Los jugadores deben presentarse en las instalaciones de juego 10 minutos
+            antes de la hora de reserva. Cualquier demora en el horario de llegada afecta a las siguientes reservas.
+          </li>
+          <li>Si el equipo no se presenta pasados 15 minutos de la hora de reserva, esta quedará automáticamente anulada
+            sin derecho a cambios ni devoluciones.</li>
+          <li>Es responsabilidad exclusiva del jugador llegar en hora para su reserva. Enigma Barcelona no se hace
+            responsable de los eventuales retrasos u obstrucciones que puedan producirse, ya sean causadas por el mal
+            tiempo, huelgas, manifestaciones, eventos deportivos, atascos de tráfico o cualquier otra razón.</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Juegos</h2>
+        <ul>
+          <li>Los juegos que ofrece Enigma Barcelona son de ingenio, habilidad y trabajo en equipo. Queda prohibido el
+            uso de la fuerza o daño a cualquier elemento de juego.</li>
+          <li>Los juegos pueden contener elementos frágiles o sensibles que deben ser manipulados con precaución.</li>
+          <li>El juego “El Virus” contiene elementos que no deben tocarse. No habrá ningún elemento de juego relevante
+            para el jugador a una altura superior a 2 metros.</li>
+          <li>Enigma Barcelona tiene derecho a cobrar a los jugadores por los daños intencionados o causados por el mal
+            uso de elementos del juego.</li>
+          <li>La duración de los juegos está debidamente indicada en la página web correspondiente a cada juego,
+            quedando a discreción del personal del juego la ampliación del mismo. Están precedidos por una presentación
+            para introducir a los jugadores a la experiencia.</li>
+          <li>El personal de Enigma Barcelona visualizará continuamente las acciones realizadas por los jugadores a
+            través de cámaras. Las partidas serán monitorizadas para permitir al personal observar el cumplimiento de
+            las normas y facilitar instrucciones y/o pistas a los jugadores si ello fuera necesario.</li>
+          <li>Podrán establecerse condiciones concretas para determinados juegos, que serán complementarias a estos
+            Términos y Condiciones.</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Seguridad</h2>
+        <ul>
+          <li>Se recomienda a los jugadores usar ropa y calzado cómodos. Enigma Barcelona no se hace responsable de
+            manchas, daños o deterioros como consecuencia de la realización de las actividades.</li>
+          <li>En el juego “El Virus” hay un pulsador rojo de emergencia, se encuentra al lado derecho de la puerta de
+            entrada y salida del interior de las instalaciones de juego. En caso de emergencia real los jugadores deben
+            pulsarlo para desbloquear la puerta, abrirla y evacuar.</li>
+          <li>Si durante el transcurso del juego uno de los jugadores se indispone, debe pulsar el pulsador de
+            emergencia y evacuar la sala juego acompañado de otro de los jugadores, hasta que se restablezca. El resto
+            de los jugadores podrán continuar el juego si lo desean. En caso de accidente o indisposición grave el
+            personal de Enigma Barcelona puede decidir detener el juego por completo.</li>
+          <li>Los juegos de Enigma Barcelona NO están categorizados como “experiencias de miedo”, sin embargo podrían
+            darse situaciones excepcionales que puedan suponer para algún jugador una situación de estrés o tensión. Por
+            ello, los jugadores que sufran de alguna dolencia, como por ejemplo enfermedades cardiovasculares o
+            epilepsias, o algún trastorno, como por ejemplo la claustrofobia o la ansiedad, deberán informar al personal
+            de Enigma Barcelona para prevenir incidencias y valorar previamente los riesgos.</li>
+          <li>Enigma Barcelona no se hace responsable de ningún tipo de accidente o daño, personal o de equipo, que
+            pudiera producirse debido a la negligencia del jugador o causado por el mal uso de las instalaciones o
+            incumplimiento de estos Términos y Condiciones. Los jugadores participan bajo su propia responsabilidad.
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h2>Tarifas, reservas y pagos</h2>
+        <ul>
+          <li>Los precios de los juegos varían en función del juego y del número de jugadores. Están indicados en la
+            página web correspondiente a cada juego e incluyen el IVA aplicable. Enigma Barcelona se reserva el derecho
+            a modificar su lista de precios y ofertas sin previo aviso. Hay fechas señaladas como los festivos de
+            Navidad que pueden tener un incremento del precio habitual.</li>
+          <li>Enigma Barcelona se reserva el derecho a aplicar otras tarifas por promociones y descuentos. Estas pueden
+            estar sujetas a cambios y modificaciones y se aplican por un tiempo determinado. El precio para empresas
+            podrá pactarse previamente.</li>
+          <li>En la reserva se deben proporcionar los siguientes datos personales de contacto: nombre y apellidos,
+            teléfono móvil y e-mail. En caso de que los datos aportados por el jugador sean erróneos o falsos Enigma
+            Barcelona no se responsabiliza de los problemas derivados de no poder contactar para informar de novedades o
+            imprevistos relacionados con su reserva.</li>
+          <li>Enigma Barcelona acepta el pago con tarjeta de crédito o débito (VISA, VISA Electrón o MasterCard. No se
+            admite American Express) y transferencia bancaria para situaciones excepcionales.</li>
+          <li>En relación al pago con tarjeta de crédito o débito a través de la web, Enigma Barcelona no tiene acceso a
+            los datos de la tarjeta y utiliza sistemas de pago seguros. Los datos confidenciales del pago son
+            transmitidos directamente y de forma encriptada (SSL) a la entidad financiera. Al hacer el pago a través de
+            pasarela de pago seguro, el sistema verificará automáticamente que la tarjeta de crédito está activada para
+            el Comercio Electrónico Seguro. Después conectará con el banco emisor de la misma, el cual autorizará la
+            operación. En el caso de que el TPV Virtual informara de la denegación de la tarjeta, el proceso de reserva
+            será automáticamente cancelado.</li>
+          <li>Enigma Barcelona acepta, en casos muy excepcionales en los que considere oportuno, el pago vía
+            transferencia bancaria. En dicho caso, Enigma Barcelona no se hace cargo de las tasas o impuestos
+            extraordinarios que puede suponer pagar mediante este método. Si el ingreso no se deposita en la cuenta en
+            48 horas después de que Enigma Barcelona bloquee la hora de reserva, esta quedará cancelada automáticamente.
+          </li>
+          <li>Una vez realizada la reserva, durante los próximos 10 minutos el jugador recibirá un e-mail automático con
+            la confirmación de la reserva. Si por algún motivo este no fuera recibido, el jugador deberá contactar con
+            Enigma Barcelona vía teléfono o e-mail para que el personal a cargo verifique y confirme dicha reserva.</li>
+          <li>Enigma Barcelona acepta pagos mediante tarjeta de crédito o débito (VISA, VISA Electrón o MasterCard. No
+            se admite American Express) y transferencia bancaria para situaciones excepcionales.</li>
+          <li>El jugador puede pedir una factura en cualquier momento una vez realizado el servicio. Para ello el
+            jugador debe solicitarla vía e-mail a adn@juegoenigma.es indicando los datos pertinentes para su creación.
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h2>Cancelaciones y modificaciones</h2>
+        <ul>
+          <li>Debido al carácter de la actividad no se realizarán cancelaciones de las reservas ni devoluciones del
+            importe abonado bajo ningún concepto. Disponemos de la posibilidad de realizar modificaciones de fecha y
+            hora dentro de unos plazos limitados.</li>
+          <li>No se admiten modificaciones de fecha u hora en las 24 horas previas a la reserva realizada. Entre las 72
+            y 24 horas previas a la reserva podrán realizarse modificaciones de fecha u hora excepcionalmente con un
+            recargo de 20€. Todo imprevisto o modificación debe ser comunicado vía teléfono o e-mail. El jugador no
+            puede modificar su reserva desde la web de Enigma Barcelona.</li>
+          <li>Cuando por razones de índole técnica, indisposición del personal, o por cualquier otro motivo imputable
+            directamente a Enigma Barcelona, este no pueda proporcionar el servicio, el jugador podrá elegir entre
+            proceder a la modificación de la fecha, o solicitar la devolución del precio. En esos casos, Enigma
+            Barcelona contactará con la mayor antelación posible con los jugadores. En caso de que dicho incidente se
+            produjera durante un juego en curso, los jugadores podrán reanudar dicho juego otro día a su elección (según
+            disponibilidad) sin coste extra alguno.</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Bonos regalo</h2>
+        <ul>
+          <li>Los bonos regalo tienen una validez de 6 meses desde su fecha de compra, tiempo durante el cual se podrá
+            realizar la reserva. Una vez caducado el bono, no se podrá usar ni reclamar su importe.</li>
+          <li>En caso de que el número de personas que finalmente participe sea superior al número de personas
+            especificadas en un bono, se deberá abonar el importe correspondiente a cada jugador adicional. Es
+            responsabilidad del jugador comprobar el número de jugadores incluidos en su bono.</li>
+          <li>En el caso de aumentar el precio de la actividad durante el periodo de validez de un bono regalo, en el
+            proceso de reserva se deberá abonar la diferencia de precio.</li>
+          <li>Los bonos regalo no son nominativos, pudiendo venir cualquier persona a disfrutar del bono.</li>
+          <li>Los bono regalo no son reembolsables en ningún caso.</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+  <a href="https://wa.me/34673423738" target="_blank" class="whatsapp"><img src="../assets/svg/whatsapp.svg"
+      alt="WhatsApp" /></a>
+  <footer class="footer">
+    <div class="footer-naranja">
+      <div class="footer-texto">
+        <a href="./pages/paraRegalar.html">REGALA LA<br />EXPERIENCIA</a>
+        <p>673 42 37 38</p>
+        <p>ADN@JUEGOENIGMA.ES</p>
+        <p class="btn-donde-estamos">¿DÓNDE ESTAMOS?</p>
+      </div>
+      <div class="footer-iconos">
+        <a href="https://www.tripadvisor.es/Attraction_Review-g187497-d7305650-Reviews-Enigma_Escape_Room_Barcelona-Barcelona_Catalonia.html"
+          target="_blank"><img src="assets/svg/tripadvisor.svg" alt="Tripadvisor" /></a>
+        <a href="https://www.instagram.com/juegoenigma/" target="_blank"><img src="assets/svg/instagram.svg"
+            alt="Instagram" /></a>
+      </div>
+    </div>
+    <div class="footer-negro">
+      <a href="#">BLOG</a>
+      <a href="aviso-legal.html">AVISO LEGAL</a>
+      <a href="privacidad.html">PRIVACIDAD</a>
+      <a href="terminos-condiciones.html">TERMINOS Y CONDICIONES</a>
+      <a href="/sitemap.xml">SITEMAP</a>
+    </div>
+  </footer>
+  <footer class="footer-responsive">
+    <p>
+      <a class="tooltip" href="tel:+34673423738">LLAMAR</a>
+    </p>
+    <p class="btn-donde-estamos">¿DÓNDE ESTAMOS?</p>
+  </footer>
+  <div id="panel-donde" class="panel-donde">
+    <div class="panel-donde__box">
+      <button class="panel-donde__close">&times;</button>
+      <h2>¿Dónde estamos?</h2>
+      <p class="box-direction">Carrer de les Acàcies 38, 08027</p>
+      <div>
+        <p>
+          <img src="/assets/img/metro_line_5-barcelona.webp" alt="Icono línea metro 1 Madrid" />
+          Maragall (5 min)
+        </p>
+        <p>
+          <img src="/assets/img/metro_line_4-barcelona.webp" alt="Icono línea metro 1 Madrid" />
+          Maragall (5 min)
+        </p>
+      </div>
+      <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3579.8445465987475!2d2.175891476466249!3d41.42525129364515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4bd2c1979e327%3A0x93f330f1b96f61fd!2sCarrer%20de%20les%20Ac%C3%A0cies%2C%2038%2C%20Sant%20Andreu%2C%2008027%20Barcelona!5e1!3m2!1ses!2ses!4v1768394767039!5m2!1ses!2ses"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+    </div>
+  </div>
+  <script>
+    const panelDonde = document.getElementById("panel-donde");
+    const cerrarDonde = document.querySelector(".panel-donde__close");
+
+    document.querySelectorAll(".btn-donde-estamos").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        panelDonde.classList.add("panel-donde--open");
+      });
+    });
+
+    cerrarDonde.addEventListener("click", () => {
+      panelDonde.classList.remove("panel-donde--open");
+    });
+
+    panelDonde.addEventListener("click", (e) => {
+      if (e.target === panelDonde) {
+        panelDonde.classList.remove("panel-donde--open");
+      }
+    });
+  </script>
+</body>
+
+</html>

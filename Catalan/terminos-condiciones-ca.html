@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <!-- Google Tag Manager -->
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != "dataLayer" ? "&l=" + l : "";
+      j.async = true;
+      j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, "script", "dataLayer", "GTM-KRX3VB6");
+  </script>
+  <!-- End Google Tag Manager -->
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Juego Enigma Barcelona | Escape Room</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="icon" href="../assets/ico/favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KRX3VB6" height="0" width="0"
+      style="display: none; visibility: hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <header>
+    <div>
+      <ul>
+        <li>
+          <a href="/terminos-condiciones.html"><img src="../assets/svg/spain.svg" alt="Icono bandera de España" /></a>
+        </li>
+        <li>
+          <a href="/ingles/terminos-condiciones-en.html"></a><img src="../assets/svg/usa.svg"
+            alt="Icono bandera de Estados Unidos" /></a>
+        </li>
+        <li>
+          <a href="/Catalan/terminos-condiciones-ca.html"><img src="../assets/svg/catalan.png"
+              alt="Icono bandera de Cataluña" /></a>
+        </li>
+      </ul>
+    </div>
+    <nav>
+      <a href="/Catalan/index-ca.html"><img
+          src="/assets/img/logo-enigma.png"
+          alt="Logo Enigma" /></a>
+      <div class="madrid btn-madrid-map">
+        <p>/BCN</p>
+        <span>+</span>
+      </div>
+      <ul>
+        <li>
+          <a href="/Catalan/index-ca.html">Escape Room</a>
+        </li>
+        <li>
+          <a href="/Catalan/paraRegalar-ca.html">Regala'ns</a>
+        </li>
+        <li><a href="/Catalan/empresas-ca.html">Empreses</a></li>
+        <li><a href="/Catalan/colaboremos-ca.html">Col·laborem</a></li>
+        <li><a href="/Catalan/smashroom-ca.html">Smash Room</a></li>
+        <li>
+          <a href="/Catalan/reservas-ca.html" class="reservas">Reservar</a>
+        </li>
+      </ul>
+      <button class="menu-toggle">
+        <div class="burger">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+
+        <div class="mobile-menu">
+          <span><a href="/Catalan/index-ca.html">Escape Room</a></span>
+          <span><a href="/Catalan/paraRegalar-ca.html">Regala'ns</a></span>
+          <span><a href="/Catalan/empresas-ca.html">Empreses</a></span>
+          <span><a href="/Catalan/colaboremos-ca.html">Col·laborem</a></span>
+          <span><a href="/Catalan/smashroom-ca.html">Smash Room</a></span>
+          <span><a href="#" class="contactanos-btn">Contacta'ns</a></span>
+
+          <div class="flags">
+            <a href="/terminos-condiciones.html"><img src="../assets/svg/spain.svg" alt="Icono bandera de España" /></a>
+            <a href="/ingles/terminos-condiciones-en.html"><img src="../assets/svg/usa.svg"
+                alt="Icono bandera de Estados Unidos" /></a>
+            <a href="/Catalan/terminos-condiciones-ca.html"><img src="../assets/svg/catalan.png"
+                alt="Icono bandera de Cataluña" /></a>
+          </div>
+          <a href="/Catalan/reservas-ca.html" class="btn-reservar-mobile">RESERVAR</a>
+        </div>
+      </button>
+    </nav>
+    <div id="panel-madrid" class="panel-madrid-modal">
+      <div class="panel-madrid-box">
+        <a href="colaboremos-ca.html#colaboremos-separador-1"><img src="../assets/img/cityMap.webp"
+            alt="Mapa Enigma España" class="mapa-madrid-img" /></a>
+      </div>
+    </div>
+    <!-- POPUP  3-->
+    <div id="popup-colaboremos-2" class="popup-overlay-2">
+      <div class="popup-box-2">
+        <h2>CONTACTA'NS</h2>
+        <div class="popup-info-2">
+          <p>JUEGO ENIGMA BARCELONA</p>
+          <p>93 142 66 38</p>
+          <p>ADN@JUEGOENIGMA.ES</p>
+          <div>
+            <a href="https://www.tripadvisor.es/Attraction_Review-g187497-d7305650-Reviews-Enigma_Escape_Room_Barcelona-Barcelona_Catalonia.html"
+              target="_blank">
+              <img class="trip-icon-2" src="../assets/svg/tripadvisor-white.svg" alt="Logo Tripadvisor" />
+            </a>
+            <a href="https://www.instagram.com/juegoenigma" target="_blank">
+              <img class="ins-icon-2" src="../assets/svg/instagram-white.svg" alt="Logo Instagram" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const popupOverlay2 = document.getElementById("popup-colaboremos-2");
+      const popupBox2 = document.querySelector(".popup-box-2");
+
+      document.querySelectorAll(".contactanos-btn").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          popupOverlay2.classList.add("open");
+        });
+      });
+
+      popupOverlay2.addEventListener("click", (e) => {
+        if (!popupBox2.contains(e.target)) {
+          popupOverlay2.classList.remove("open");
+        }
+      });
+    </script>
+  </header>
+  <a href="/Catalan/reservas-ca.html" class="btn-reservar-sticky">RESERVAR</a>
+  <script>
+    const btnMadridMap = document.querySelector(".btn-madrid-map");
+    const panelMadrid = document.getElementById("panel-madrid");
+    const stickyBtn2 = document.querySelector(".btn-reservar-sticky");
+
+    btnMadridMap.addEventListener("click", () => {
+      panelMadrid.classList.add("panel-open");
+      stickyBtn2.classList.add("hidden");
+      document.body.classList.add("body-no-scroll");
+    });
+
+    panelMadrid.addEventListener("click", (e) => {
+      if (!e.target.closest(".panel-madrid-box")) {
+        panelMadrid.classList.remove("panel-open");
+        stickyBtn2.classList.remove("hidden");
+        document.body.classList.remove("body-no-scroll");
+      }
+    });
+  </script>
+  <script>
+    const burger = document.querySelector(".burger");
+    const mobileMenu = document.querySelector(".mobile-menu");
+    const stickyBtn = document.querySelector(".btn-reservar-sticky");
+
+    burger.addEventListener("click", () => {
+      burger.classList.toggle("open");
+      mobileMenu.classList.toggle("open");
+      stickyBtn.classList.toggle("hidden");
+    });
+  </script>
+  <main>
+    <div class="main-terminos">
+      <h1>TERMES I CONDICIONS</h1>
+      <div>
+        <h2>Condicions d'accés i participació</h2>
+        <ul>
+          <li>
+            La participació en l'activitat implica l'acceptació íntegra d'aquests Termes i Condicions per part de la
+            totalitat dels participants, d'ara endavant: jugadors. En cas que algun jugador no estigui, totalment o
+            parcialment dacord amb el contingut daquests Termes i Condicions, shaurà dabstenir de participar.
+          </li>
+          <li>Durant el desenvolupament del joc, els jugadors hauran d'atendre i seguir en tot moment les indicacions
+            del personal d'Enigma Barcelona.
+          </li>
+          <li>
+            Enigma Barcelona es reserva el dret d'admissió i el dret d'expulsar els jugadors de manera immediata en cas
+            de detectar qualsevol incompliment d'aquests Termes i Condicions o de les indicacions que rebin el personal
+            de l'empresa, perdent així el dret a continuar jugant i qualsevol tipus de devolució o indemnització.
+          </li>>
+          <li>L'aforament dels jocs és limitat i depèn de cada joc. Està degudament indicat a la pàgina web corresponent
+            a cada joc.</li>
+          <li>L'edat mínima per participar-hi depèn de cada joc. Està degudament indicada a la pàgina web corresponent a
+            cada joc.</li>
+          <li>
+            Les persones amb mobilitat reduïda (cadires de rodes, crosses, etc) hauran de consultar via e-mail o telèfon
+            la viabilitat de participar a cadascun dels jocs d'Enigma Barcelona per evitar qualsevol tipus
+            d'inconvenient.
+          </li>
+          <li>Queda totalment prohibit:
+            <ul>
+              <li>Participar en les activitats sota els efectes de lalcohol, qualsevol tipus de droga o altres
+                substàncies estupefaents.</li>
+              <li>Filmar o fer fotografies a l'interior de les instal·lacions.</li>
+              <li>L'ús de qualsevol dispositiu electrònic, així com qualsevol objecte que procedeixi de l'exterior.</li>
+              <li>Manca de neteja personal greu.</li>
+              <li>Manca de respecte al personal del joc o actituds violentes o que provoquin qualsevol desordre durant
+                l'activitat.</li>
+              <li>No seguiu les indicacions del personal del joc.</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h2>Horaris i retards</h2>
+        <ul>
+          <li>Cal màxima puntualitat. Els jugadors s'han de presentar a les instal·lacions de joc 10 minuts abans de
+            l'hora de reserva. Qualsevol demora en l'horari d'arribada afecta les reserves següents.
+          </li>
+          <li>Si l'equip no es presenta passats 15 minuts de l'hora de reserva, quedarà automàticament anul·lada sense
+            dret a canvis ni devolucions.</li>
+          <li>És responsabilitat exclusiva del jugador arribar en hora per a la reserva. Enigma Barcelona no es fa
+            responsable dels eventuals retards o obstruccions que es puguin produir, ja siguin causades pel mal temps,
+            vagues, manifestacions, esdeveniments esportius, embussos de trànsit o qualsevol altra raó.</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Jocs</h2>
+        <ul>
+          <li>Els jocs que ofereix Enigma Barcelona són d?enginy, habilitat i treball en equip. Queda prohibit lús de la
+            força o dany a qualsevol element de joc.</li>
+          <li>Els jocs poden contenir elements fràgils o sensibles que cal manipular amb precaució.</li>
+          <li>El joc “El Virus” conté elements que no s'han de tocar. No hi haurà cap element de joc rellevant per al
+            jugador a una alçada superior a 2 metres.</li>
+          <li>Enigma Barcelona té dret a cobrar els jugadors pels danys intencionats o causats pel mal ús d'elements del
+            joc.</li>
+          <li>La durada dels jocs està degudament indicada a la pàgina web corresponent a cada joc, quedant a discreció
+            del personal del joc la seva ampliació. Estan precedits per una presentació per introduir els jugadors a
+            lexperiència.</li>
+          <li>El personal d´Enigma Barcelona visualitzarà contínuament les accions realitzades pels jugadors a través de
+            càmeres. Les partides seran monitoritzades per permetre al personal observar el compliment de les normes i
+            facilitar instruccions i/o pistes als jugadors si calgués.</li>
+          <li>Podran establir-se condicions concretes per a determinats jocs, que seran complementàries a aquests Termes
+            i Condicions.</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Seguretat</h2>
+        <ul>
+          <li>Es recomana als jugadors fer servir roba i calçat còmodes. Enigma Barcelona no es fa responsable de
+            taques, danys o deterioraments com a conseqüència de la realització de les activitats.</li>
+          <li>Al joc El Virus hi ha un polsador vermell d'emergència, es troba al costat dret de la porta d'entrada i
+            sortida de l'interior de les instal·lacions de joc. En cas d'emergència real, els jugadors han de prémer-lo
+            per desbloquejar la porta, obrir-la i evacuar.</li>
+          <li>Si durant el transcurs del joc un dels jugadors s'indisposa, heu de prémer el polsador d'emergència i
+            evacuar la sala joc acompanyat d'un altre dels jugadors fins que es restableixi. La resta dels jugadors
+            podran continuar el joc si ho desitgen. En cas d'accident o indisposició greu, el personal d'Enigma
+            Barcelona pot decidir aturar completament el joc.</li>
+          <li>Els jocs d'Enigma Barcelona NO estan categoritzats com a “experiències de por”, però podrien donar-se
+            situacions excepcionals que puguin suposar per a algun jugador una situació d'estrès o tensió. Per això, els
+            jugadors que pateixin alguna malaltia, com ara malalties cardiovasculars o epilèpsies, o algun trastorn, com
+            ara la claustrofòbia o l'ansietat, hauran d'informar el personal d'Enigma Barcelona per prevenir incidències
+            i valorar prèviament els riscos.</li>
+          <li>Enigma Barcelona no es fa responsable de cap tipus d'accident o dany, personal o d'equip, que es pugui
+            produir a causa de la negligència del jugador o causat pel mal ús de les instal·lacions o l'incompliment
+            d'aquests Termes i Condicions. Els jugadors hi participen sota la seva pròpia responsabilitat.</li>
+
+        </ul>
+      </div>
+      <div>
+        <h2>Tarifes, reserves i pagaments</h2>
+        <ul>
+          <li>Els preus dels jocs varien en funció del joc i del nombre de jugadors. Estan indicats a la pàgina web
+            corresponent a cada joc i inclouen l'IVA aplicable. Enigma Barcelona es reserva el dret a modificar la
+            llista de preus i ofertes sense avís previ. Hi ha dates assenyalades com els festius de Nadal que poden
+            tenir un increment del preu habitual.</li>
+          <li>Enigma Barcelona es reserva el dret d'aplicar altres tarifes per promocions i descomptes. Aquestes poden
+            estar subjectes a canvis i modificacions i s'apliquen durant un temps determinat. El preu per a empreses es
+            podrà pactar prèviament.</li>
+          <li>A la reserva s'han de proporcionar les dades personals de contacte següents: nom i cognoms, telèfon mòbil
+            i e-mail. En cas que les dades aportades pel jugador siguin errònies o falses, Enigma Barcelona no es
+            responsabilitza dels problemes derivats de no poder contactar per informar de novetats o imprevistos
+            relacionats amb la seva reserva.</li>
+          <li>Enigma Barcelona accepta el pagament amb targeta de crèdit o dèbit (VISA, VISA Electró o MasterCard. No
+            s'admet American Express) i transferència bancària per a situacions excepcionals.</li>
+          <li>Pel que fa al pagament amb targeta de crèdit o dèbit a través del web, Enigma Barcelona no té accés a les
+            dades de la targeta i utilitza sistemes de pagament segurs. Les dades confidencials del pagament són
+            transmeses directament i de manera encriptada (SSL) a l'entitat financera. En fer el pagament a través de
+            passarel·la de pagament segur, el sistema verificarà automàticament que la targeta de crèdit està activada
+            per al Comerç Electrònic Segur. Després connectarà amb el banc emissor de la mateixa, el qual autoritzarà
+            loperació. En cas que el TPV Virtual informés de la denegació de la targeta, el procés de reserva serà
+            automàticament cancel·lat.</li>
+          <li>Enigma Barcelona accepta, en casos molt excepcionals en què consideri oportú, el pagament via
+            transferència bancària. En aquest cas, Enigma Barcelona no es fa càrrec de les taxes o els impostos
+            extraordinaris que pot suposar pagar mitjançant aquest mètode. Si l'ingrés no es diposita al compte en 48
+            hores després que Enigma Barcelona bloquegi l'hora de reserva, quedarà cancel·lada automàticament.</li>
+          <li>Un cop realitzada la reserva, durant els propers 10 minuts el jugador rebrà un correu electrònic automàtic
+            amb la confirmació de la reserva. Si per algun motiu aquest no fos rebut, el jugador haurà de contactar amb
+            Enigma Barcelona via telèfon o correu electrònic perquè el personal a càrrec verifiqui i confirmi aquesta
+            reserva.</li>
+          <li>Enigma Barcelona accepta pagaments mitjançant targeta de crèdit o dèbit (VISA, VISA Electró o MasterCard.
+            No s'admet American Express) i transferència bancària per a situacions excepcionals.</li>
+          <li>El jugador pot demanar una factura en qualsevol moment un cop fet el servei. Per això el jugador ha de
+            sol·licitar-la via e-mail a adn@juegoenigma.es indicant les dades pertinents per a la seva creació.</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Cancel·lacions i modificacions</h2>
+        <ul>
+          <li>A causa del caràcter de l'activitat no es faran cancel·lacions de les reserves ni devolucions de l'import
+            abonat sota cap concepte. Disposem de la possibilitat de fer modificacions de data i hora dins d'uns
+            terminis limitats.</li>
+          <li>No s'admeten modificacions de data o hora a les 24 hores prèvies a la reserva realitzada. Entre les 72 i
+            24 hores prèvies a la reserva es podran fer modificacions de data o hora excepcionalment amb un recàrrec de
+            20€. Tot imprevist o modificació ha de ser comunicat via telèfon o correu electrònic. El jugador no pot
+            modificar la reserva des de la web d'Enigma Barcelona.</li>
+          <li>Quan per raons d'índole tècnica, indisposició del personal, o per qualsevol altre motiu imputable
+            directament a Enigma Barcelona, ​​aquest no pugui proporcionar el servei, el jugador podrà triar entre
+            modificar la data, o sol·licitar la devolució del preu. En aquests casos, Enigma Barcelona contactarà amb la
+            màxima antelació possible amb els jugadors. En cas que aquest incident es produís durant un joc en curs, els
+            jugadors podran reprendre aquest joc un altre dia a la seva elecció (segons disponibilitat) sense cap cost
+            extra.</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Bons regal
+        </h2>
+        <ul>
+          <li>Els bons regal tenen una validesa de 6 mesos des de la data de compra, temps durant el qual es podrà
+            realitzar la reserva. Un cop caducat el bo, no es podrà fer servir ni reclamar-ne l'import.</li>
+          <li>En cas que el nombre de persones que finalment hi participi sigui superior al nombre de persones
+            especificades en un abonament, cal abonar l'import corresponent a cada jugador addicional. És
+            responsabilitat del jugador comprovar el nombre de jugadors inclosos al seu bo.</li>
+          <li>En el cas daugmentar el preu de lactivitat durant el període de validesa dun bon regal, en el procés de
+            reserva shaurà dabonar la diferència de preu.</li>
+          <li>Els bons regals no són nominatius, podent venir qualsevol persona a gaudir del bo.</li>
+          <li>Els bons regals no són reemborsables en cap cas.</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+  <a href="https://wa.me/34673423738" target="_blank" class="whatsapp"><img src="../assets/svg/whatsapp.svg"
+      alt="WhatsApp" /></a>
+  <footer class="footer">
+    <div class="footer-naranja">
+      <div class="footer-texto">
+        <a href="paraRegalar-ca.html">REGALA LA<br />EXPERIÈNCIA</a>
+        <p>673 42 37 38</p>
+        <p>ADN@JUEGOENIGMA.ES</p>
+        <p class="btn-donde-estamos">ON SOM?</p>
+      </div>
+      <div class="footer-iconos">
+        <a href="https://www.tripadvisor.es/Attraction_Review-g187497-d7305650-Reviews-Enigma_Escape_Room_Barcelona-Barcelona_Catalonia.html"
+          target="_blank"><img src="../assets/svg/tripadvisor.svg" alt="Tripadvisor" /></a>
+        <a href="https://www.instagram.com/juegoenigma/" target="_blank"><img src="../assets/svg/instagram.svg"
+            alt="Instagram" /></a>
+      </div>
+    </div>
+    <div class="footer-negro">
+      <a href="#">BLOG</a>
+      <a href="aviso-legal-ca.html">AVIS LEGAL</a>
+      <a href="privacidad-ca.html">PRIVACITAT</a>
+      <a href="terminos-condiciones-ca.html">TERMES I CONDICIONS</a>
+      <a href="/sitemap.xml">SITEMAP</a>
+    </div>
+  </footer>
+  <footer class="footer-responsive">
+    <p>
+      <a class="tooltip" href="tel:+34673423738">TRUCAR</a>
+    </p>
+    <p class="btn-donde-estamos">ON SOM?</p>
+  </footer>
+  <div id="panel-donde" class="panel-donde">
+    <div class="panel-donde__box">
+      <button class="panel-donde__close">&times;</button>
+      <h2>ON SOM?</h2>
+      <p class="box-direction">CARRER DE LES ACÀCIES 38, 08027</p>
+      <div>
+        <p>
+          <img src="..//assets/img/metro_line_5-barcelona.webp" alt="Icono línea metro 1 Madrid" />
+          Maragall (5 min)
+        </p>
+        <p>
+          <img src="../assets/img/metro_line_4-barcelona.webp" alt="Icono línea metro 1 Madrid" />
+          Maragall (5 min)
+        </p>
+      </div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3579.8445465987475!2d2.175891476466249!3d41.42525129364515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4bd2c1979e327%3A0x93f330f1b96f61fd!2sCarrer%20de%20les%20Ac%C3%A0cies%2C%2038%2C%20Sant%20Andreu%2C%2008027%20Barcelona!5e1!3m2!1ses!2ses!4v1768394767039!5m2!1ses!2ses"
+        width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+  <script>
+    const panelDonde = document.getElementById("panel-donde");
+    const cerrarDonde = document.querySelector(".panel-donde__close");
+
+    document.querySelectorAll(".btn-donde-estamos").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        panelDonde.classList.add("panel-donde--open");
+      });
+    });
+
+    cerrarDonde.addEventListener("click", () => {
+      panelDonde.classList.remove("panel-donde--open");
+    });
+
+    panelDonde.addEventListener("click", (e) => {
+      if (e.target === panelDonde) {
+        panelDonde.classList.remove("panel-donde--open");
+      }
+    });
+  </script>
+</body>
+
+</html>
