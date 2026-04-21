@@ -1,35 +1,41 @@
 @font-face {
   font-family: "BankGothic Medium";
-  src: url("../assets/fonts/bankGothic/bank gothic medium bt.ttf")
-    format("truetype");
+  src: url("./assets/fonts/bankGothic/bank gothic medium bt.woff2") format("woff2"),
+       url("./assets/fonts/bankGothic/bank gothic medium bt.ttf") format("truetype");
   font-weight: 600;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "BankGothic Medium";
-  src: url("../assets/fonts/bankGothic/BankGothic Bold.ttf") format("truetype");
+  src: url("./assets/fonts/bankGothic/BankGothic Bold.woff2") format("woff2"),
+       url("./assets/fonts/bankGothic/BankGothic Bold.ttf") format("truetype");
   font-weight: 900;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Montserrat";
-  src: url("./assets/fonts/Montserrat/Montserrat-Regular.ttf")
-    format("truetype");
+  src: url("./assets/fonts/Montserrat/Montserrat-Regular.woff2") format("woff2"),
+       url("./assets/fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
   font-weight: 500;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "BaseMonoWideReg Regular";
-  src: url("./assets/fonts/BaseMonoWideReg-Regular.ttf") format("truetype");
+  src: url("./assets/fonts/BaseMonoWideReg-Regular.woff2") format("woff2"),
+       url("./assets/fonts/BaseMonoWideReg-Regular.ttf") format("truetype");
   font-weight: 400;
   font-display: swap;
 }
 
 @font-face {
   font-family: "AlternateGothic";
-  src: url("../assets/fonts/alternategothic/7047-fontps.ttf") format("truetype");
+  src: url("./assets/fonts/alternategothic/7047-fontps.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 * {
