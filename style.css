@@ -20,19 +20,9 @@
 
 @font-face {
   font-family: "BaseMonoWideReg Regular";
-  src: url("https://db.onlinewebfonts.com/t/6ab5d96e147141b4a169d5e33df14dc5.eot");
-  src:
-    url("https://db.onlinewebfonts.com/t/6ab5d96e147141b4a169d5e33df14dc5.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://db.onlinewebfonts.com/t/6ab5d96e147141b4a169d5e33df14dc5.woff2")
-      format("woff2"),
-    url("https://db.onlinewebfonts.com/t/6ab5d96e147141b4a169d5e33df14dc5.woff")
-      format("woff"),
-    url("https://db.onlinewebfonts.com/t/6ab5d96e147141b4a169d5e33df14dc5.ttf")
-      format("truetype"),
-    url("https://db.onlinewebfonts.com/t/6ab5d96e147141b4a169d5e33df14dc5.svg#BaseMonoWideReg Regular")
-      format("svg");
-  font-weight: 600;
+  src: url("./assets/fonts/BaseMonoWideReg-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
 }
 
 @font-face {
