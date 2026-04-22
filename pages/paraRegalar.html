@@ -23,6 +23,33 @@
   <title>Juego Enigma Barcelona | Escape Room</title>
   <link rel="stylesheet" href="../style.css" />
   <link rel="stylesheet" href="https://aether-static.gestorempresas.es/css/bonos.css" />
+  <!-- Restaurar fuente del proyecto después del reset de bonos.css -->
+  <style>
+    body,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center, dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed,
+    figure, figcaption, footer, header, hgroup,
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {
+      font-family: "BankGothic Medium", sans-serif !important;
+    }
+    p {
+      font-family: "BaseMonoWideReg Regular", sans-serif !important;
+      font-weight: 400 !important;
+    }
+    .btn-madrid-map p {
+      font-family: "BankGothic Medium", sans-serif !important;
+    }
+    footer, footer * {
+      font-family: "BankGothic Medium", sans-serif !important;
+    }
+  </style>
   <link rel="icon" href="../assets/ico/favicon.ico" type="image/x-icon" />
 </head>
 
@@ -316,6 +343,32 @@
         panelDonde.classList.remove("panel-donde--open");
       }
     });
+  </script>
+  <script>
+    // Forzar fuente del proyecto después de que bonos.js inyecte sus estilos
+    function forzarFuente() {
+      const style = document.createElement('style');
+      style.textContent = `
+        body, h1, h2, h3, h4, h5, h6, a, span, li, ul, ol,
+        label, input, button, strong, em, div:not([id^="system"]) {
+          font-family: "BankGothic Medium", sans-serif !important;
+        }
+        p {
+          font-family: "BaseMonoWideReg Regular", sans-serif !important;
+          font-weight: 400 !important;
+        }
+        .btn-madrid-map p {
+          font-family: "BankGothic Medium", sans-serif !important;
+        }
+        footer, footer * {
+          font-family: "BankGothic Medium", sans-serif !important;
+        }
+      `;
+      document.head.appendChild(style);
+    }
+    // Ejecutar al cargar y con un pequeño delay por si bonos.js va tarde
+    window.addEventListener('load', forzarFuente);
+    setTimeout(forzarFuente, 500);
   </script>
 </body>
 
