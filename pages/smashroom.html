@@ -32,6 +32,41 @@
     <link href="https://calendar.gestorempresas.es/css/chunk-vendors.css" rel="stylesheet" />
     <link href="https://calendar.gestorempresas.es/css/app.css" rel="stylesheet" />
 
+    <!-- Restaurar fuente del proyecto después del reset de CSS externos -->
+    <style>
+      body,
+      h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+      a, abbr, acronym, address, big, cite, code,
+      del, dfn, em, ins, kbd, q, s, samp,
+      small, strike, strong, sub, sup, tt, var,
+      b, u, i, center, dl, dt, dd, ol, ul, li,
+      fieldset, form, label, legend,
+      table, caption, tbody, tfoot, thead, tr, th, td,
+      article, aside, canvas, details, embed,
+      figure, figcaption, footer, header, hgroup,
+      menu, nav, output, ruby, section, summary,
+      time, mark, audio, video {
+        font-family: "BankGothic Medium", sans-serif !important;
+      }
+      p {
+        font-family: "BaseMonoWideReg Regular", sans-serif !important;
+        font-weight: 400 !important;
+        font-size: 16px !important;
+      }
+      .btn-madrid-map p {
+        font-family: "BankGothic Medium", sans-serif !important;
+      }
+      footer, footer * {
+        font-family: "BankGothic Medium", sans-serif !important;
+      }
+      img {
+        max-width: 555px !important;
+      }
+      .banner-container img {
+        max-width: 100% !important;
+      }
+    </style>
+
     <!-- AION dependencies -->
     <script src="https://unpkg.com/@adamdehaven/vue-custom-tooltip"></script>
     <script src="https://js.stripe.com/v3/"></script>
@@ -458,6 +493,32 @@
                 panelDonde.classList.remove("panel-donde--open");
             }
         });
+    </script>
+
+    <script>
+      // Forzar fuente del proyecto después de que CSS externos inyecten sus estilos
+      function forzarFuente() {
+        const style = document.createElement('style');
+        style.textContent = `
+          body, h1, h2, h3, h4, h5, h6, a, span, li, ul, ol,
+          label, input, button, strong, em, div:not([id^="system"]) {
+            font-family: "BankGothic Medium", sans-serif !important;
+          }
+          p {
+            font-family: "BaseMonoWideReg Regular", sans-serif !important;
+            font-weight: 400 !important;
+          }
+          .btn-madrid-map p {
+            font-family: "BankGothic Medium", sans-serif !important;
+          }
+          footer, footer * {
+            font-family: "BankGothic Medium", sans-serif !important;
+          }
+        `;
+        document.head.appendChild(style);
+      }
+      window.addEventListener('load', forzarFuente);
+      setTimeout(forzarFuente, 500);
     </script>
 
 </body>
