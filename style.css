@@ -160,8 +160,6 @@ header nav .menu-toggle {
   margin-bottom: 10em;
 }
 
-#aion-checkout,
-#aion-checkout * {}
 
 main {
   margin-top: 6em;
@@ -6800,169 +6798,6 @@ p {
     padding: 1em;
   }
 
-  .retos {
-    display: flex;
-    flex-direction: column;
-    width: 65%;
-    margin: 0 auto;
-    margin-top: 5em;
-    margin-bottom: 10em;
-  }
-
-  .retos .collage {
-    width: 40%;
-    margin: 0 auto;
-    margin-bottom: 9em;
-  }
-
-  .retos-container {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    gap: 9em;
-    margin: 0 auto;
-  }
-
-  .retos-container img {
-    width: 44%;
-  }
-
-  .retos-container-1 {
-    width: 100%;
-    display: flex;
-    gap: 2em;
-  }
-
-  .retos-container-1 div {
-    position: relative;
-    width: 100%;
-  }
-
-  .retos-container-1 div img {
-    width: 70%;
-    position: absolute;
-    top: -60px;
-  }
-
-  .retos-container-1 div h3 {
-    color: white;
-    font-size: 28px;
-    top: -20px;
-    position: relative;
-    margin-left: 15%;
-  }
-
-  .retos-container-1 div .engranaje {
-    margin-left: 3.5em;
-  }
-
-  .retos-container-1 div p {
-    color: white;
-    font-size: 20px;
-    width: 70%;
-    position: absolute;
-    right: 200px;
-    line-height: 1.5;
-    text-align: right;
-    margin: 0 auto;
-    font-family: "BaseMonoWideReg Regular";
-    font-weight: 400;
-  }
-
-  .retos-container-2 {
-    width: 100%;
-    display: flex;
-    gap: 2em;
-  }
-
-  .retos-container-2 div {
-    position: relative;
-    width: 100%;
-  }
-
-  .retos-container-2 div img {
-    width: 70%;
-    position: absolute;
-    top: -60px;
-    right: 20px;
-  }
-
-  .retos-container-2 div h3 {
-    color: white;
-    font-size: 28px;
-    top: -20px;
-    position: relative;
-    margin-left: 7em;
-  }
-
-  .retos-container-2 div .laberinto {
-    margin-left: 21%;
-  }
-
-  .retos-container-2 div p {
-    color: white;
-    font-size: 20px;
-    width: 70%;
-    position: absolute;
-    right: 80px;
-    line-height: 1.5;
-    text-align: left;
-    margin: 0 auto;
-    font-family: "BaseMonoWideReg Regular";
-    font-weight: 400;
-  }
-
-  .retos {
-    width: 100%;
-    padding: 0 7em;
-    margin-top: 1em;
-  }
-
-  .retos .collage {
-    width: 30%;
-  }
-
-  .retos-container-1 div img {
-    width: 100%;
-    right: -4%;
-    top: -27%;
-  }
-
-  .retos-container-1 div p {
-    position: relative;
-    right: -8%;
-    width: 85%;
-  }
-
-  .retos-container-1 div h3 {
-    margin-left: 30%;
-    right: 0;
-  }
-
-  .retos-container-1 div .engranaje {
-    margin-left: 30%;
-  }
-
-  .retos-container-2 div img {
-    width: 100%;
-    right: 4%;
-    top: -27%;
-  }
-
-  .retos-container-2 div p {
-    position: relative;
-    left: 0;
-    width: 100%;
-  }
-
-  .retos-container-2 div h3 {
-    margin-left: 0;
-  }
-
-  .retos-container-2 div .laberinto {
-    margin-left: 0;
-  }
-
   .regalo-section {
     width: 80%;
   }
@@ -8323,86 +8158,9 @@ p {
 }
 
 .smash-texto p {
-  font-family: "BaseMonoWideReg Regular";
   font-size: 20px;
 }
 
-.smash-romper {
-  margin-top: 5%;
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-}
-
-.romper-texto {
-  width: 40%;
-}
-
-.romper-titulo {
-  position: relative;
-  display: inline-block;
-}
-
-.romper-titulo img {
-  width: 100%;
-  display: block;
-}
-
-.romper-titulo h2 {
-  position: absolute;
-  top: 30%;
-  right: 20px;
-  font-size: 35px;
-}
-
-.romper-texto p {
-  font-family: "BaseMonoWideReg Regular";
-  line-height: 1.5;
-  font-size: 25px;
-  width: 80%;
-  padding-left: 15%;
-}
-
-.romper-img {
-  width: 40%;
-  height: 500px;
-  object-fit: contain;
-}
-
-.smash-proteccion {
-  margin-top: 5%;
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-}
-
-.proteccion-titulo {
-  position: relative;
-  display: inline-block;
-}
-
-.proteccion-texto {
-  width: 40%;
-}
-
-.proteccion-titulo h2 {
-  position: absolute;
-  right: 350px;
-  top: 30%;
-  font-size: 35px;
-}
-
-.proteccion-texto p {
-  font-family: "BaseMonoWideReg Regular";
-  line-height: 1.5;
-  font-size: 25px;
-  width: 80%;
-
-}
-
-.romper-texto span {
-  color: #ff5f01;
-}
 
 .smash-reservas h2 {
   margin-top: 5%;
@@ -8551,6 +8309,89 @@ p {
 
   .proteccion-texto p {
     width: 100%;
+  }
+
+  /* retos-container: márgenes laterales automáticos, sin encoger texto ni imágenes */
+  .retos {
+    width: 90%;
+    margin: 5em auto 10em;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .retos .collage {
+    width: min(520px, 60%);
+    margin: 0 auto 6em;
+    display: block;
+  }
+
+  .retos-container {
+    display: flex;
+    flex-direction: column;
+    gap: 6em;
+  }
+
+  .retos-container-1,
+  .retos-container-2 {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 3em;
+  }
+
+  .retos-container-1>img,
+  .retos-container-2>img {
+    width: 48%;
+    height: auto;
+    display: block;
+    flex-shrink: 0;
+  }
+
+  .retos-container-1>div,
+  .retos-container-2>div {
+    min-height: 270px;
+    padding-top: 0;
+  }
+
+  .retos-container-1>div>img,
+  .retos-container-2>div>img {
+    width: 100%;
+    top: -58px;
+    z-index: 3;
+  }
+
+  .retos-container-1>div>div {
+    text-align: right;
+  }
+
+  .retos-container-2>div>div {
+    text-align: left;
+  }
+
+  .retos-container h3 {
+    font-size: 30px;
+    line-height: 1;
+    margin-top: 6px;
+    color: white;
+  }
+
+  .retos-container-1 div h3,
+  .retos-container-2 div h3 {
+    position: relative;
+    top: -35px;
+  }
+
+  .retos-container-1 div .engranaje,
+  .retos-container-2 div .laberinto {
+    position: relative;
+    top: -35px;
+  }
+
+  .retos-container p {
+    font-size: 20px;
+    width: 100%;
+    margin-top: 6px;
   }
 }
 
@@ -8779,7 +8620,6 @@ footer p {
   line-height: 1.5;
   text-align: right;
   padding-left: 0 !important;
-  font-family: "BaseMonoWideReg Regular" !important;
   font-weight: 400;
 }
 
@@ -8790,7 +8630,6 @@ footer p {
   line-height: 1.5;
   text-align: left;
   padding-left: 0 !important;
-  font-family: "BaseMonoWideReg Regular" !important;
   font-weight: 400;
 }
 
