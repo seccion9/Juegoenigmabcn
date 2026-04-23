@@ -1,7 +1,7 @@
 @font-face {
   font-family: "BankGothic Medium";
   src: url("./assets/fonts/bankGothic/bank gothic medium bt.woff2") format("woff2"),
-       url("./assets/fonts/bankGothic/bank gothic medium bt.ttf") format("truetype");
+    url("./assets/fonts/bankGothic/bank gothic medium bt.ttf") format("truetype");
   font-weight: 600;
   font-display: swap;
 }
@@ -9,32 +9,16 @@
 @font-face {
   font-family: "BankGothic Medium";
   src: url("./assets/fonts/bankGothic/BankGothic Bold.woff2") format("woff2"),
-       url("./assets/fonts/bankGothic/BankGothic Bold.ttf") format("truetype");
+    url("./assets/fonts/bankGothic/BankGothic Bold.ttf") format("truetype");
   font-weight: 900;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Montserrat";
-  src: url("./assets/fonts/Montserrat/Montserrat-Regular.woff2") format("woff2"),
-       url("./assets/fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
-  font-weight: 500;
   font-display: swap;
 }
 
 @font-face {
   font-family: "BaseMonoWideReg Regular";
   src: url("./assets/fonts/BaseMonoWideReg-Regular.woff2") format("woff2"),
-       url("./assets/fonts/BaseMonoWideReg-Regular.ttf") format("truetype");
+    url("./assets/fonts/BaseMonoWideReg-Regular.ttf") format("truetype");
   font-weight: 400;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "AlternateGothic";
-  src: url("./assets/fonts/alternategothic/7047-fontps.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
   font-display: swap;
 }
 
@@ -170,7 +154,6 @@ header nav .menu-toggle {
 }
 
 .reservas-aion {
-  font-family: "AlternateGothic", sans-serif !important;
   width: 70%;
   margin: 0 auto;
   margin-top: 4em;
@@ -178,9 +161,7 @@ header nav .menu-toggle {
 }
 
 #aion-checkout,
-#aion-checkout * {
-  font-family: "AlternateGothic", sans-serif !important;
-}
+#aion-checkout * {}
 
 main {
   margin-top: 6em;
@@ -281,7 +262,6 @@ main {
 .main-terminos h1,
 .main-aviso-legal h1,
 .main-privacidad h1 {
-  font-family: "Montserrat";
   font-size: 2.5rem;
   margin-bottom: 50px;
   font-weight: 500;
@@ -308,7 +288,6 @@ main {
 .main-aviso-legal h2,
 .main-privacidad h2 {
   color: #ff5f01;
-  font-family: "Montserrat";
   font-size: 2rem;
   margin-bottom: 8px;
   font-weight: 500;
@@ -318,7 +297,6 @@ main {
 .main-aviso-legal h3,
 .main-privacidad h3 {
   color: grey;
-  font-family: "Montserrat";
   font-size: 1.5rem;
   margin-bottom: 5px;
 }
@@ -327,7 +305,6 @@ main {
 .main-aviso-legal p,
 .main-privacidad p {
   color: white;
-  font-family: "Montserrat";
   font-weight: 100;
   font-size: 1.2rem;
   margin-bottom: 40px;
@@ -339,7 +316,6 @@ main {
 .main-aviso-legal ul,
 .main-privacidad ul {
   color: white;
-  font-family: "Montserrat";
   font-weight: 100;
   font-size: 1rem;
   margin-bottom: 40px;
@@ -352,7 +328,6 @@ main {
 .main-aviso-legal li,
 .main-privacidad li {
   color: white;
-  font-family: "Montserrat";
   font-weight: 100;
   font-size: 1.2rem;
   text-align: left;
@@ -389,7 +364,7 @@ main {
   transition: transform 0.5s ease-in-out;
 }
 
-.contenedor-1 > div {
+.contenedor-1>div {
   min-width: 100%;
   height: 100%;
   display: flex;
@@ -712,6 +687,7 @@ h3 {
 }
 
 @keyframes deslizar-2 {
+
   0%,
   30% {
     transform: translateX(0);
@@ -980,6 +956,7 @@ h3 {
   }
 
   @keyframes deslizar-2 {
+
     0%,
     30% {
       transform: translateX(0);
@@ -1238,6 +1215,7 @@ h3 {
   }
 
   @keyframes deslizar-2 {
+
     0%,
     30% {
       transform: translateX(0);
@@ -1471,6 +1449,7 @@ h3 {
   }
 
   @keyframes deslizar-2 {
+
     0%,
     30% {
       transform: translateX(0);
@@ -1864,6 +1843,7 @@ h3 {
   }
 
   @keyframes deslizar-2 {
+
     0%,
     30% {
       transform: translateX(0);
@@ -1886,6 +1866,7 @@ h3 {
 }
 
 @media (min-width: 1441px) and (max-width: 1800px) {
+
   #colaboremos-separador-1,
   #colaboremos-separador-2,
   #colaboremos-separador-3,
@@ -2099,7 +2080,7 @@ h3 {
   border-right: 5px solid #ff5f01;
 }
 
-.regalo > p {
+.regalo>p {
   font-family: "BaseMonoWideReg Regular";
   grid-column: 2;
   grid-row: 2;
@@ -2180,7 +2161,6 @@ h3 {
 
 .bono-contenido .nota {
   color: #ff5f01;
-  font-family: "Montserrat";
 }
 
 .bono-boton {
@@ -2226,7 +2206,6 @@ h3 {
 
 .fajo-contenido .nota {
   color: #ff5f01;
-  font-family: "Montserrat";
 }
 
 .fajo-boton {
@@ -2279,7 +2258,6 @@ h3 {
 }
 
 .comprar-virus-title p {
-  font-family: "Montserrat";
   font-weight: 400;
   font-size: 1em;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 1);
@@ -2288,11 +2266,9 @@ h3 {
 .comprar-virus-paragraph {
   width: 90%;
   font-size: 1em;
-  font-family: "Montserrat";
 }
 
 .comprar-virus-form {
-  font-family: "Montserrat";
   color: white;
   margin-top: auto;
 }
@@ -2301,7 +2277,6 @@ h3 {
   display: block;
   font-size: 0.8em;
   margin-bottom: 0.3em;
-  font-family: "Montserrat";
   font-weight: bold;
 }
 
@@ -2312,7 +2287,6 @@ h3 {
   border: none;
   font-size: 1em;
   font-weight: bold;
-  font-family: "Montserrat";
 }
 
 .total-compra {
@@ -2322,7 +2296,6 @@ h3 {
   gap: 0.5em;
   margin-top: 0.8em;
   font-weight: 600;
-  font-family: "Montserrat";
   font-size: 1.2em;
 }
 
@@ -2336,7 +2309,6 @@ h3 {
   cursor: pointer;
   font-size: 0.95em;
   transition: background 0.2s ease-in-out;
-  font-family: "Montserrat";
 }
 
 .total-compra button:hover {
@@ -2366,14 +2338,12 @@ h3 {
 }
 
 .comprar-keylock-title p {
-  font-family: "Montserrat";
   font-size: 1em;
   text-shadow: 3px 3px 10px rgba(0, 0, 0, 1);
 }
 
 .comprar-keylock-paragraph {
   width: 90%;
-  font-family: "Montserrat";
   font-size: 1em;
 }
 
@@ -2741,7 +2711,7 @@ h3 {
   transition: transform 0.8s ease-in-out;
 }
 
-.carrusel-container > div {
+.carrusel-container>div {
   flex: 0 0 25%;
   display: flex;
   justify-content: space-around;
@@ -2754,7 +2724,7 @@ h3 {
   transition: transform 0.3s ease;
 }
 
-.carrusel-container > div:last-child {
+.carrusel-container>div:last-child {
   justify-content: center;
   gap: 4em;
 }
@@ -2809,7 +2779,7 @@ h3 {
   width: 85%;
 }
 
-.reservar-contenedor div > p {
+.reservar-contenedor div>p {
   font-size: 0.9em;
   font-family: "BaseMonoWideReg Regular";
 }
@@ -2821,6 +2791,7 @@ h3 {
 
 /* RESPONSIVE RESERVAR */
 @media (max-width: 768px) {
+
   html,
   body {
     overflow-x: hidden;
@@ -3302,7 +3273,7 @@ p {
   font-size: 24px;
 }
 
-.panel-donde__box > div:nth-of-type(2) {
+.panel-donde__box>div:nth-of-type(2) {
   grid-column: 2;
   grid-row: 1 / span 2;
   display: flex;
@@ -3335,21 +3306,6 @@ p {
 
 /*/ ///////////////////////////AESINO KEYLOCK CITY////////////////////////////*/
 
-@font-face {
-  font-family: "Courier Prime";
-  src: url(/assets/fonts/Courier_Prime/CourierPrime-Regular.ttf);
-}
-
-@font-face {
-  font-family: "Bebas Neue";
-  src: url(/assets/fonts/Bebas_Neue/BebasNeue-Regular.ttf);
-}
-
-@font-face {
-  font-family: "Bebas Neue Light";
-  src: url(/assets/fonts/Bebas_Neue_Light/Bebas\ Neue\ Light.ttf);
-}
-
 .body-asesino {
   background-image: url(assets/img/bg_colaboremos.webp);
   margin: 7% 15%;
@@ -3374,7 +3330,6 @@ p {
 }
 
 .titulo-asesino h2 {
-  font-family: "Bebas Neue";
   color: white;
   font-size: 55px;
   letter-spacing: 2px;
@@ -3384,7 +3339,6 @@ p {
 
 .titulo-asesino b,
 .titulo-asesino u {
-  font-family: "Bebas Neue";
   letter-spacing: 2px;
 }
 
@@ -3394,7 +3348,6 @@ p {
 }
 
 .subtitulo-asesino p {
-  font-family: "Bebas Neue";
   font-size: 28px;
   font-weight: 100;
   letter-spacing: 2px;
@@ -3410,7 +3363,6 @@ p {
 }
 
 .boton-hall span {
-  font-family: "Bebas Neue";
   font-size: 28px;
   letter-spacing: 2px;
   display: inline-block;
@@ -3440,7 +3392,6 @@ p {
 }
 
 .descripcion-negra-contenido p {
-  font-family: "Courier Prime";
   font-size: 18px;
   letter-spacing: 2px;
   font-weight: 100;
@@ -3448,7 +3399,6 @@ p {
 }
 
 .descripcion-negra-contenido b {
-  font-family: "Courier Prime";
   font-size: 18px;
   letter-spacing: 2px;
   font-weight: 800;
@@ -3476,7 +3426,6 @@ p {
 .rojo2 p,
 .rojo3 p,
 .rojo4 p {
-  font-family: "Bebas Neue";
   letter-spacing: 2px;
   font-weight: 200;
   font-size: 20px;
@@ -3489,7 +3438,6 @@ p {
 .rojo4 h2 {
   color: white;
   text-align: right;
-  font-family: "Bebas Neue";
   letter-spacing: 2px;
   font-weight: 500;
   font-size: 40px;
@@ -3529,7 +3477,6 @@ p {
 
 .boton-amarillo1 h2,
 .boton-amarillo2 h2 {
-  font-family: "Bebas Neue";
   letter-spacing: 1px;
   color: black;
   display: block;
@@ -3551,7 +3498,6 @@ p {
 
 .boton-amarillo2 p {
   transform: skew(10deg, 0deg);
-  font-family: "Bebas Neue";
   font-weight: 500;
   font-size: 35px;
   padding-top: 15px;
@@ -3576,7 +3522,6 @@ p {
 }
 
 .titulo-grupos h2 {
-  font-family: "Bebas Neue";
   letter-spacing: 2px;
   color: white;
   font-size: 50px;
@@ -3584,7 +3529,6 @@ p {
 }
 
 .titulo-grupos p {
-  font-family: "Bebas Neue";
   letter-spacing: 2px;
   font-weight: 100;
   font-size: 28px;
@@ -3606,7 +3550,6 @@ p {
 .titulo-hall h2,
 .titulo-reserva h2,
 .titulo-domicilio h2 {
-  font-family: "Bebas Neue";
   letter-spacing: 2px;
   font-weight: 100;
   color: white;
@@ -3637,7 +3580,6 @@ p {
   color: black;
   text-align: justify;
   width: 100%;
-  font-family: "Bebas Neue";
   font-weight: 100;
   line-height: 1.5;
   letter-spacing: 2px;
@@ -3648,7 +3590,6 @@ p {
 
 .hall-escape1 span,
 .hall-escape2 span {
-  font-family: "Bebas Neue";
   font-weight: 100;
   line-height: 1.5;
   letter-spacing: 2px;
@@ -3659,7 +3600,6 @@ p {
   color: black;
   text-align: justify;
   width: 100%;
-  font-family: "Bebas Neue";
   letter-spacing: 2px;
   font-weight: 100;
   line-height: 1.5;
@@ -3669,7 +3609,6 @@ p {
 }
 
 .hall-escape3 span {
-  font-family: "Bebas Neue";
   letter-spacing: 2px;
   font-weight: 100;
   line-height: 1.5;
@@ -3711,7 +3650,6 @@ p {
 
 .domicilio-1 p,
 .domicilio-2 p {
-  font-family: "Bebas Neue";
   letter-spacing: 2px;
   font-weight: 100;
   color: black;
@@ -3724,7 +3662,6 @@ p {
 
 .domicilio-1 span,
 .domicilio-2 span {
-  font-family: "Bebas Neue";
   letter-spacing: 2px;
   font-weight: 100;
   font-size: 30px;
@@ -3739,7 +3676,6 @@ p {
 
 .que-se-necesita h2,
 .reserva-domicilio h2 {
-  font-family: "Bebas Neue";
   letter-spacing: 2px;
   font-weight: 100;
   color: #ae070b;
@@ -3788,7 +3724,6 @@ p {
 }
 
 .campo label {
-  font-family: "Bebas Neue";
   letter-spacing: 2px;
   font-weight: 100;
   font-size: 28px;
@@ -3800,7 +3735,6 @@ p {
   border: none;
   padding: 20px;
   border-radius: 15px;
-  font-family: "Bebas Neue";
   letter-spacing: 2px;
   font-weight: 100;
   font-size: 22px;
@@ -3819,7 +3753,6 @@ p {
 
 .submit input {
   border: none;
-  font-family: "Bebas Neue";
   letter-spacing: 2px;
   font-weight: 100;
   font-size: 28px;
@@ -3833,7 +3766,7 @@ p {
     border-bottom: none;
   }
 
-  header > div {
+  header>div {
     display: none;
     height: 100%;
   }
@@ -4085,7 +4018,7 @@ p {
     margin-top: 10px;
   }
 
-  .panel-donde__box > div:nth-of-type(2) {
+  .panel-donde__box>div:nth-of-type(2) {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -4482,7 +4415,7 @@ p {
     padding: 1em;
   }
 
-  .regalo > p {
+  .regalo>p {
     margin-left: 0;
     border-left: 5px solid #ff5f01;
     font-family: "BaseMonoWideReg Regular";
@@ -4494,7 +4427,7 @@ p {
     font-size: 1.5em;
   }
 
-  .regalo-texto > p {
+  .regalo-texto>p {
     font-size: 13px !important;
   }
 
@@ -4709,7 +4642,7 @@ p {
     padding: 1em;
   }
 
-  .personal-cont-3 > div {
+  .personal-cont-3>div {
     background: #2e2e2e;
     color: white;
     padding: 10px;
@@ -4765,7 +4698,7 @@ p {
     width: 100%;
   }
 
-  .carrusel-container > div {
+  .carrusel-container>div {
     flex: 0 0 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -4793,7 +4726,7 @@ p {
     border-bottom: none;
   }
 
-  header > div {
+  header>div {
     display: none;
     height: 100%;
   }
@@ -5043,7 +4976,7 @@ p {
     margin-top: 20px;
   }
 
-  .panel-donde__box > div:nth-of-type(2) {
+  .panel-donde__box>div:nth-of-type(2) {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -5355,6 +5288,7 @@ p {
     font-family: "BaseMonoWideReg Regular";
     font-weight: 400;
   }
+
   .retos {
     width: 100%;
     padding: 0 1em;
@@ -5449,7 +5383,7 @@ p {
     padding: 1em;
   }
 
-  .regalo > p {
+  .regalo>p {
     margin-left: 0;
     border-left: 5px solid #ff5f01;
     font-family: "BaseMonoWideReg Regular";
@@ -5461,7 +5395,7 @@ p {
     font-size: 1.5em;
   }
 
-  .regalo-texto > p {
+  .regalo-texto>p {
     font-size: 13px !important;
   }
 
@@ -5663,7 +5597,7 @@ p {
     padding: 1em;
   }
 
-  .personal-cont-3 > div {
+  .personal-cont-3>div {
     background: #2e2e2e;
     color: white;
     padding: 10px;
@@ -5720,7 +5654,7 @@ p {
     width: 100%;
   }
 
-  .carrusel-container > div {
+  .carrusel-container>div {
     flex: 0 0 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -6063,7 +5997,7 @@ p {
     border: none;
   }
 
-  .regalo > p {
+  .regalo>p {
     border-left: 5px solid #ff5f01;
     padding-left: 1em;
     margin-left: 0;
@@ -6284,7 +6218,7 @@ p {
     width: 100%;
   }
 
-  .carrusel-container > div {
+  .carrusel-container>div {
     flex: 0 0 100%;
     display: flex !important;
     flex-direction: row;
@@ -6794,7 +6728,7 @@ p {
     width: 100%;
   }
 
-  .carrusel-container > div {
+  .carrusel-container>div {
     flex: 0 0 100%;
     display: flex !important;
     flex-direction: row;
@@ -7220,7 +7154,7 @@ p {
     width: 100%;
   }
 
-  .carrusel-container > div {
+  .carrusel-container>div {
     flex: 0 0 100%;
     display: flex !important;
     flex-direction: row;
@@ -7237,7 +7171,6 @@ p {
 
 .submit input {
   border: none;
-  font-family: "Bebas Neue";
   letter-spacing: 2px;
   font-weight: 100;
   font-size: 28px;
@@ -8464,7 +8397,7 @@ p {
   line-height: 1.5;
   font-size: 25px;
   width: 80%;
-  padding-left: 15%;
+
 }
 
 .romper-texto span {
@@ -8654,31 +8587,31 @@ p {
     gap: 3em;
   }
 
-  .retos-container-1 > img,
-  .retos-container-2 > img {
+  .retos-container-1>img,
+  .retos-container-2>img {
     width: 48%;
     height: auto;
     display: block;
   }
 
-  .retos-container-1 > div,
-  .retos-container-2 > div {
+  .retos-container-1>div,
+  .retos-container-2>div {
     min-height: 270px;
     padding-top: 0;
   }
 
-  .retos-container-1 > div > img,
-  .retos-container-2 > div > img {
+  .retos-container-1>div>img,
+  .retos-container-2>div>img {
     width: 100%;
     top: -58px;
     z-index: 3;
   }
 
-  .retos-container-1 > div > div {
+  .retos-container-1>div>div {
     text-align: right;
   }
 
-  .retos-container-2 > div > div {
+  .retos-container-2>div>div {
     text-align: left;
   }
 
@@ -8710,7 +8643,204 @@ p {
   .retos-container-1 h3 {
     transform: translateY(-2px);
   }
+
   .retos-container-2 h3 {
     transform: translateY(-2px);
+  }
+}
+
+/* ===== UNIFICACIÓN TIPOGRÁFICA GLOBAL ===== */
+/* Títulos: Bank Gothic en todo el proyecto */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "BankGothic Medium" !important;
+}
+
+/* Header y Nav: Bank Gothic */
+header,
+header * {
+  font-family: "BankGothic Medium" !important;
+}
+
+/* Footer: Bank Gothic */
+footer,
+footer * {
+  font-family: "BankGothic Medium" !important;
+}
+
+/* Párrafos: BaseMonoWideReg en todo el proyecto */
+p {
+  font-family: "BaseMonoWideReg Regular" !important;
+}
+
+/* Excepción: párrafos dentro de header, nav y footer mantienen Bank Gothic */
+header p,
+header nav p,
+footer p {
+  font-family: "BankGothic Medium" !important;
+}
+
+/* virus-contenedor-text: todas las <p> en negro excepto la primera (naranja) */
+.virus-contenedor-text p {
+  color: black !important;
+}
+
+.virus-contenedor-text p:first-of-type {
+  color: #ff5f01 !important;
+}
+
+/* ===== SMASH GRID (estilo retos-container, flujo normal) ===== */
+
+/* Wrapper: 65% centrado, igual que .retos */
+.smash-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 6em;
+  width: 65%;
+  margin: 5em auto 10em;
+}
+
+/* Fila: flex horizontal, igual que retos-container-1/2 */
+.smash-grid .smash-romper,
+.smash-grid .smash-proteccion {
+  margin-top: 0;
+  width: 100%;
+  display: flex;
+  gap: 2em;
+  align-items: flex-start;
+}
+
+/* Foto: 576x305px fijo */
+.smash-grid .romper-img {
+  width: 576px;
+  height: 305px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+/* Área de texto: position relative para el cable absolute */
+.smash-grid .romper-texto,
+.smash-grid .proteccion-texto {
+  position: relative;
+  width: 100%;
+  max-width: 576px;
+  padding-top: 60px;
+  /* espacio para el cable que sube con top:-60px */
+}
+
+/* Cable decorativo: ancho completo del contenedor */
+.smash-grid .smash-romper .romper-texto>img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.smash-grid .smash-proteccion .proteccion-texto>img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Div interior que contiene h2 + p — en flujo normal */
+.smash-grid .romper-texto>div,
+.smash-grid .proteccion-texto>div {
+  position: relative;
+  width: 100%;
+}
+
+/* h2: ancho completo, alineado con el texto del p */
+.smash-grid .smash-romper .romper-texto>div>h2 {
+  color: white;
+  font-size: 28px;
+  width: 100%;
+  margin-right: 0;
+  margin-bottom: 1em;
+}
+
+.smash-grid .smash-proteccion .proteccion-texto>div>h2 {
+  color: white;
+  font-size: 28px;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+/* p: ancho completo del contenedor */
+.smash-grid .smash-romper .romper-texto>div>p {
+  color: white !important;
+  font-size: 20px !important;
+  width: 100%;
+  line-height: 1.5;
+  text-align: right;
+  font-family: "BaseMonoWideReg Regular" !important;
+  font-weight: 400;
+}
+
+.smash-grid .smash-proteccion .proteccion-texto>div>p {
+  color: white !important;
+  font-size: 20px !important;
+  width: 100%;
+  line-height: 1.5;
+  text-align: left;
+  font-family: "BaseMonoWideReg Regular" !important;
+  font-weight: 400;
+}
+
+/* Span de precios */
+.smash-grid .romper-texto span,
+.smash-grid .proteccion-texto span {
+  color: #ff5f01;
+}
+
+/* Responsive ≤1200px */
+@media (max-width: 1200px) {
+  .smash-grid {
+    width: 100%;
+    padding: 0 1em;
+    margin-top: 2em;
+    gap: 5em;
+    margin-bottom: 8em;
+  }
+
+  .smash-grid .smash-romper,
+  .smash-grid .smash-proteccion {
+    flex-direction: column;
+  }
+
+  .smash-grid .romper-img {
+    width: 100%;
+    order: 2;
+  }
+
+  .smash-grid .smash-romper .romper-img {
+    order: 2;
+  }
+
+  .smash-grid .romper-texto,
+  .smash-grid .proteccion-texto {
+    width: 100%;
+    padding-top: 0;
+  }
+
+  .smash-grid .smash-romper .romper-texto>img,
+  .smash-grid .smash-proteccion .proteccion-texto>img {
+    display: none;
+  }
+
+  .smash-grid .smash-romper .romper-texto>div>h2,
+  .smash-grid .smash-proteccion .proteccion-texto>div>h2 {
+    margin-left: 0;
+    font-size: 24px;
+  }
+
+  .smash-grid .smash-romper .romper-texto>div>p,
+  .smash-grid .smash-proteccion .proteccion-texto>div>p {
+    text-align: left;
+    font-size: 20px !important;
   }
 }
