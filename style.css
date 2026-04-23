@@ -8761,6 +8761,7 @@ footer p {
   width: 100%;
   margin-right: 0;
   margin-bottom: 1em;
+  text-align: end;
 }
 
 .smash-grid .smash-proteccion .proteccion-texto>div>h2 {
@@ -8777,6 +8778,7 @@ footer p {
   width: 100%;
   line-height: 1.5;
   text-align: right;
+  padding-left: 0 !important;
   font-family: "BaseMonoWideReg Regular" !important;
   font-weight: 400;
 }
@@ -8787,6 +8789,7 @@ footer p {
   width: 100%;
   line-height: 1.5;
   text-align: left;
+  padding-left: 0 !important;
   font-family: "BaseMonoWideReg Regular" !important;
   font-weight: 400;
 }
@@ -8798,23 +8801,57 @@ footer p {
 }
 
 /* Responsive ≤1200px */
+/* Entre 1201px y 1750px: layout horizontal con márgenes laterales proporcionales */
+@media (min-width: 1201px) and (max-width: 1750px) {
+  .smash-grid {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .smash-grid .smash-romper,
+  .smash-grid .smash-proteccion {
+    gap: 2em;
+    align-items: flex-start;
+  }
+
+  /* Imagen y texto proporcionales al ancho disponible */
+  .smash-grid .romper-img {
+    width: 48%;
+    max-width: 576px;
+    height: 305px;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+
+  .smash-grid .romper-texto,
+  .smash-grid .proteccion-texto {
+    width: 48%;
+    max-width: 576px;
+  }
+}
+
 @media (max-width: 1200px) {
   .smash-grid {
-    width: 100%;
-    padding: 0 1em;
-    margin-top: 2em;
+    width: 90%;
+    margin: 2em auto 8em;
+    padding: 0;
     gap: 5em;
-    margin-bottom: 8em;
+    align-items: center;
   }
 
   .smash-grid .smash-romper,
   .smash-grid .smash-proteccion {
     flex-direction: column;
+    align-items: center;
   }
 
   .smash-grid .romper-img {
     width: 100%;
+    max-width: 800px;
+    height: auto;
     order: 2;
+    margin: 0 auto;
   }
 
   .smash-grid .smash-romper .romper-img {
@@ -8824,6 +8861,7 @@ footer p {
   .smash-grid .romper-texto,
   .smash-grid .proteccion-texto {
     width: 100%;
+    max-width: 800px;
     padding-top: 0;
   }
 
