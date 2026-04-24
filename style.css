@@ -1,7 +1,7 @@
 @font-face {
   font-family: "BankGothic Medium";
-  src: url("./assets/fonts/bankGothic/bank gothic medium bt.woff2") format("woff2"),
-    url("./assets/fonts/bankGothic/bank gothic medium bt.ttf") format("truetype");
+  src: url("./assets/fonts/bankGothic/bank-gothic-medium-bt.woff2") format("woff2"),
+    url("./assets/fonts/bankGothic/bank-gothic-medium-bt.ttf") format("truetype");
   font-weight: 600;
   font-display: swap;
 }
