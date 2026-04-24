@@ -8525,6 +8525,12 @@ footer p {
   font-family: "BankGothic Medium" !important;
 }
 
+/* reservas-container-texto: BankGothic en todos los idiomas */
+.reservas-container-texto,
+.reservas-container-texto * {
+  font-family: "BankGothic Medium" !important;
+}
+
 /* virus-contenedor-text: todas las <p> en negro excepto la primera (naranja) */
 .virus-contenedor-text p {
   color: black !important;
