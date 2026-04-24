@@ -4,18 +4,19 @@
 <head>
     <script>
     window.dataLayer = window.dataLayer || [];
-    window.dataLayer.push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-    function loadGTM() {
-      if (window._gtmLoaded) return;
-      window._gtmLoaded = true;
-      var s = document.createElement("script");
-      s.async = true;
-      s.src = "https://www.googletagmanager.com/gtm.js?id=GTM-KRX3VB6";
-      document.head.appendChild(s);
-    }
-    window.addEventListener("load", function () {
-      setTimeout(loadGTM, 500);
-    });
+      window.dataLayer.push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+      function loadGTM() {
+        if (window._gtmLoaded) return;
+        window._gtmLoaded = true;
+        var s = document.createElement("script");
+        s.async = true;
+        s.src = "https://www.googletagmanager.com/gtm.js?id=GTM-KRX3VB6";
+        document.head.appendChild(s);
+      }
+      ["mousedown","mousemove","scroll","keydown","touchstart"].forEach(function(e) {
+        document.addEventListener(e, loadGTM, { once: true, passive: true });
+      });
+      setTimeout(loadGTM, 7000);
   </script>
 
   <meta charset="UTF-8" />
