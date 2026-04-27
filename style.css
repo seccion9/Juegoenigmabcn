@@ -1927,7 +1927,7 @@ h3 {
   gap: 1em;
 }
 
-.virus-contenedor-text h3 {
+.virus-contenedor-text h2 {
   color: black;
   text-align: center;
   font-size: 2rem;
@@ -1985,6 +1985,8 @@ h3 {
   background-color: #ff5f01;
   padding: 0.65em 0.5em;
   align-self: flex-end;
+  font-size: 19px;
+  font-weight: bold;
 }
 
 .servicios-keylock {
@@ -2023,6 +2025,8 @@ h3 {
   background-color: #ff5f01;
   padding: 0.65em 0.5em;
   align-self: flex-start;
+  font-size: 19px;
+  font-weight: bold;
 }
 
 /*////////////////////////////REGALOS////////////////////////////*/
@@ -3930,7 +3934,7 @@ p {
     color: white;
     text-decoration: none;
     text-align: center;
-    font-size: 16px;
+    font-size: 19px;
     font-weight: bold;
     width: 100vw;
     padding: 0.67em 0;
@@ -3960,13 +3964,16 @@ p {
     align-items: center;
     text-align: center;
     cursor: pointer;
-    font-size: 0.8em;
+    font-size: 1.2em;
+    font-weight: bold;
   }
 
   .tooltip {
     position: relative;
     text-decoration: none;
     color: white;
+    font-size: 1.2em;
+    font-weight: bold;
   }
 
   .bono-boton {
@@ -4890,7 +4897,7 @@ p {
     color: white;
     text-decoration: none;
     text-align: center;
-    font-size: 18px;
+    font-size: 19px;
     font-weight: bold;
     width: 100vw;
     padding: 0.67em 0;
@@ -4923,13 +4930,15 @@ p {
     text-align: center;
     cursor: pointer;
     font-size: 1.33em;
-    font-weight: 400;
+    font-weight: bold;
   }
 
   .tooltip {
     position: relative;
     text-decoration: none;
     color: white;
+    font-size: 1.33em;
+    font-weight: bold;
   }
 
   /*
@@ -8559,6 +8568,7 @@ footer p {
   display: flex;
   gap: 2em;
   align-items: flex-start;
+  justify-content: center;
 }
 
 /* Foto: 576x305px fijo */
