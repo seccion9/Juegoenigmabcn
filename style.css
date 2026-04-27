@@ -1927,7 +1927,7 @@ h3 {
   gap: 1em;
 }
 
-.virus-contenedor-text h3 {
+.virus-contenedor-text h2 {
   color: black;
   text-align: center;
   font-size: 2rem;
@@ -8559,6 +8559,7 @@ footer p {
   display: flex;
   gap: 2em;
   align-items: flex-start;
+  justify-content: center;
 }
 
 /* Foto: 576x305px fijo */
