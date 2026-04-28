@@ -249,23 +249,17 @@
       </div>
     </section>
 
-    <!-- AION - CALENDARIO -->
+    <!-- AION - BONOS REGALO -->
     <section id="reservasPage" class="reservas-aion">
-      <div id="system-13773-container"></div>
-      <link rel="stylesheet" href="https://aether-static.gestorempresas.es/css/bonos.css" />
-      <script src="https://aether-static.gestorempresas.es/js/bonos.js"></script>
-      <script src="https://aether-static.gestorempresas.es/js/iframeResizer.contentWindow.js"></script>
       <script>
-        window.start_calendar_routine({
-          base_url: "https://enigmabcn.gestorempresas.es/bonos",
-          content_id: "system-13773-container",
-          icon_load: "https://aether-static.gestorempresas.es/img/loading.gif",
-          uuid: "c6f654a6-8688-4df7-a4fa-c90c48ed03b4",
-          lang: "Es"
-        });
+        localStorage.setItem('data-integration-aion-uuid', 'f33862d0-f649-4e85-bc78-0d90f3257039');
+        localStorage.setItem('data-integration-aion-url', 'https://enigmabcn.gestorempresas.es');
+        localStorage.setItem('data-integration-aion-locale', 'es_ES');
       </script>
-
-      <!--<div id="aion-checkout-widget"></div>-->
+      <noscript><strong>We're sorry but enigma doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript>
+      <div id="aion-checkout-widget"></div>
+      <script src="https://calendar.gestorempresas.es/js/chunk-vendors.js"></script>
+      <script src="https://calendar.gestorempresas.es/js/app.js"></script>
       <div class="recuerda">
         <br>
         ➡️ Recuerda: NO salgas de la web a medio proceso de reserva, pues tu sesión seleccionada permanecerá bloqueada
@@ -357,22 +351,6 @@
     });
   </script>
 
-  <!-- AION CONFIG + SCRIPTS -->
-  <!--<script src="https://unpkg.com/@adamdehaven/vue-custom-tooltip"></script>
-  <script src="https://js.stripe.com/v3/"></script>
-  <script>
-    localStorage.setItem('data-integration-aion-uuid', 'f33862d0-f649-4e85-bc78-0d90f3257039');
-    localStorage.setItem('data-integration-aion-url', 'https://enigmabcn.gestorempresas.es');
-    localStorage.setItem('data-integration-aion-locale', 'es_ES');
-  </script>
-  <link href="https://calendar.gestorempresas.es/cleaner.css" rel="stylesheet">
-  <link href="https://calendar.gestorempresas.es/css/chunk-vendors.css" rel="stylesheet">
-  <link href="https://calendar.gestorempresas.es/css/app.css" rel="stylesheet">
-  <noscript><strong>We're sorry but enigma doesn't work properly without JavaScript enabled. Please enable it to
-      continue.</strong></noscript>
-  <div id="aion-checkout-widget"></div>
-  <script src="https://calendar.gestorempresas.es/js/chunk-vendors.js"></script>
-  <script src="https://calendar.gestorempresas.es/js/app.js"></script>-->
 </body>
 
 </html>
