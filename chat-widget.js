@@ -71,8 +71,8 @@
     /* Burbuja */
     #ecw-bubble {
       position: fixed;
-      bottom: 24px;
-      right: 24px;
+      bottom: 120px;
+      right: 25px;
       z-index: 9998;
       width: 58px;
       height: 58px;
@@ -121,8 +121,8 @@
     /* Panel */
     #ecw-panel {
       position: fixed;
-      bottom: 96px;
-      right: 24px;
+      bottom: 190px;
+      right: 25px;
       z-index: 9997;
       width: 340px;
       max-width: calc(100vw - 32px);
@@ -236,16 +236,24 @@
     .ecw-wa-btn:hover {
       background: #1ebe5d;
     }
-    /* Responsive móvil */
-    @media (max-width: 480px) {
-      #ecw-panel {
-        right: 12px;
-        bottom: 88px;
-        width: calc(100vw - 24px);
-      }
+    /* Responsive — mismos breakpoints que el botón original */
+    @media (min-width: 551px) and (max-width: 770px) {
       #ecw-bubble {
+        bottom: 50px;
+      }
+      #ecw-panel {
+        bottom: 120px;
+      }
+    }
+    @media (max-width: 550px) {
+      #ecw-bubble {
+        bottom: 35px;
         right: 16px;
-        bottom: 16px;
+      }
+      #ecw-panel {
+        bottom: 105px;
+        right: 16px;
+        width: calc(100vw - 32px);
       }
     }
   `;
