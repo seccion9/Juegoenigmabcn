@@ -11,7 +11,7 @@
      CONFIGURACIÓN
   ───────────────────────────────────────── */
   const CONFIG = {
-    waNumber: '34673423738',
+    waNumber: '34936941824',
     waPrefilledMsg: 'Hola, quiero información sobre Enigma BCN',
   };
 
