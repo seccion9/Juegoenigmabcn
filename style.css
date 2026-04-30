@@ -8692,6 +8692,35 @@ footer p {
   }
 }
 
+/* Por encima de 1750px: mismos estilos proporcionales, sin límite superior */
+@media (min-width: 1751px) {
+  .smash-grid {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .smash-grid .smash-romper,
+  .smash-grid .smash-proteccion {
+    gap: 2em;
+    align-items: flex-start;
+  }
+
+  .smash-grid .romper-img {
+    width: 48%;
+    max-width: 576px;
+    height: 305px;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+
+  .smash-grid .romper-texto,
+  .smash-grid .proteccion-texto {
+    width: 48%;
+    max-width: 576px;
+  }
+}
+
 @media (max-width: 1200px) {
   .smash-grid {
     width: 90%;
