@@ -1,4 +1,13 @@
 # ============================================================
+#  Redirigir no-www → www (evita contenido duplicado en Google)
+# ============================================================
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{HTTP_HOST} ^juegoenigma\.es$ [NC]
+    RewriteRule ^(.*)$ https://www.juegoenigma.es/$1 [R=301,L]
+</IfModule>
+
+# ============================================================
 #  Cache-Control para assets estáticos
 #  Mejora el rendimiento (Lighthouse: "Usar tiempos de caché eficientes")
 # ============================================================
