@@ -5681,6 +5681,17 @@ p {
 }
 
 @media (min-width: 771px) and (max-width: 1000px) {
+  /* ── wrap forzado en todos los h3 de retos ── */
+  .retos-container-1 h3,
+  .retos-container-2 h3 {
+    white-space: normal !important;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+  }
+
   header {
     height: 90px;
   }
@@ -5779,7 +5790,7 @@ p {
   }
 
   .retos-container-1 div .engranaje {
-    margin-left: 3.5em;
+    margin-left: 25%;
   }
 
   .retos-container-1 div p {
@@ -5887,7 +5898,7 @@ p {
   }
 
   .retos-container-1 div .engranaje {
-    margin-left: 45%;
+    margin-left: 25%;
     white-space: nowrap;
   }
 
@@ -6366,8 +6377,6 @@ p {
     color: white;
     font-size: 20px;
     width: 70%;
-    position: absolute;
-    right: 200px;
     line-height: 1.5;
     text-align: right;
     margin: 0 auto;
@@ -6409,8 +6418,6 @@ p {
     color: white;
     font-size: 20px;
     width: 70%;
-    position: absolute;
-    right: 80px;
     line-height: 1.5;
     text-align: left;
     margin: 0 auto;
@@ -6436,7 +6443,6 @@ p {
 
   .retos-container-1 div p {
     position: relative;
-    right: -8%;
     width: 85%;
   }
 
